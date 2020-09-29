@@ -44,10 +44,18 @@ cp $product/.htaccess bk/$product/ 2>&1 >>./$product.log
 #sino en develop por default
 
 cd $product
-git pull >>../$product.log
+git pull 2>&1 >>../$product.log
 git reset $tag --hard 2>&1 >>../$product.log
+if [ -d "application/modules" ]
+then
+   echo ">>>> Actualizando submodulos"
+   cd application/modules
+   git submodule foreach git reset --hard 2>&1 >>../$product.log
+   git submodule update --init 2>&1 >>../$product.log
+   cd ../..
+fi
 git status
-git status >>../$product.log
+git status 2>&1 >>../$product.log
 cd ..
 
 echo ">>>> git reset finalizado"
