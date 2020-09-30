@@ -1,0 +1,490 @@
+id,Etapa,U. Medida,Código,Descripción
+,Finca,Unidad,MP001,Plantín Aloreña Verde
+,Finca,Unidad,MP002,Plantín Manzanilla Verde
+,Finca,Unidad,MP003,Plantín Picual Verde
+,Finca,Unidad,MP004,Plantín Hijiblanca Verde
+,Finca,Unidad,MP005,Plantín Aloreña Negra
+,Finca,Unidad,MP006,Plantín Manzanilla Negra
+,Finca,Unidad,MP007,Plantín Picual Negra
+,Finca,Unidad,MP008,Plantín Hijiblanca Negra
+,Finca,M2,PP001,Aceituna Aloreña Verde
+,Finca,M2,PP002,Aceituna Manzanilla Verde
+,Finca,M2,PP003,Aceituna Picual Verde
+,Finca,M2,PP004,Aceituna Hijiblanca Verde
+,Finca,M2,PP005,Aceituna Aloreña Negra
+,Finca,M2,PP006,Aceituna Manzanilla Negra
+,Finca,M2,PP007,Aceituna Picual Negra
+,Finca,M2,PP008,Aceituna Hijiblanca Negra
+,Finca,Bins ,PF001,Aceituna Aloreña Verde CALIDAD 1
+,Finca,Bins ,PF002,Aceituna Aloreña Verde CALIDAD 2
+,Finca,Bins ,PF003,Aceituna Aloreña Verde CALIDAD 3
+,Finca,Bins ,PF004,Aceituna Manzanilla Verde CALIDAD 1
+,Finca,Bins ,PF005,Aceituna Manzanilla Verde CALIDAD 2
+,Finca,Bins ,PF006,Aceituna Manzanilla Verde CALIDAD 3
+,Finca,Bins ,PF007,Aceituna Picual Verde CALIDAD 1
+,Finca,Bins ,PF008,Aceituna Picual Verde CALIDAD 2
+,Finca,Bins ,PF009,Aceituna Picual Verde CALIDAD 3
+,Finca,Bins ,PF010,Aceituna Hijiblanca Verde CALIDAD 1
+,Finca,Bins ,PF011,Aceituna Hijiblanca Verde CALIDAD 2
+,Finca,Bins ,PF012,Aceituna Hijiblanca Verde CALIDAD 3
+,Finca,Bins ,PF013,Aceituna Aloreña Negra CALIDAD 1
+,Finca,Bins ,PF014,Aceituna Aloreña Negra CALIDAD 2
+,Finca,Bins ,PF015,Aceituna Aloreña Negra CALIDAD 3
+,Finca,Bins ,PF016,Aceituna Manzanilla Negra CALIDAD 1
+,Finca,Bins ,PF017,Aceituna Manzanilla Negra CALIDAD 2
+,Finca,Bins ,PF018,Aceituna Manzanilla Negra CALIDAD 3
+,Finca,Bins ,PF019,Aceituna Picual Negra CALIDAD 1
+,Finca,Bins ,PF020,Aceituna Picual Negra CALIDAD 2
+,Finca,Bins ,PF021,Aceituna Picual Negra CALIDAD 3
+,Finca,Bins ,PF022,Aceituna Hijiblanca Negra CALIDAD 1
+,Finca,Bins ,PF023,Aceituna Hijiblanca Negra CALIDAD 2
+,Finca,Bins ,PF024,Aceituna Hijiblanca Negra CALIDAD 3
+,Fermentación,Kg,PP009,Aceituna Fermentada Aloreña Verde CALIDAD 1 
+,Fermentación,Kg,PP010,Aceituna Fermentada Aloreña Verde CALIDAD 2
+,Fermentación,Kg,PP011,Aceituna Fermentada Aloreña Verde CALIDAD 3
+,Fermentación,Kg,PP012,Aceituna Fermentada Manzanilla Verde CALIDAD 1
+,Fermentación,Kg,PP013,Aceituna Fermentada Manzanilla Verde CALIDAD 2
+,Fermentación,Kg,PP014,Aceituna Fermentada Manzanilla Verde CALIDAD 3
+,Fermentación,Kg,PP015,Aceituna Fermentada Picual Verde CALIDAD 1
+,Fermentación,Kg,PP016,Aceituna Fermentada Picual Verde CALIDAD 2
+,Fermentación,Kg,PP017,Aceituna Fermentada Picual Verde CALIDAD 3
+,Fermentación,Kg,PP018,Aceituna Fermentada Hijiblanca Verde CALIDAD 1
+,Fermentación,Kg,PP019,Aceituna Fermentada Hijiblanca Verde CALIDAD 2
+,Fermentación,Kg,PP020,Aceituna Fermentada Hijiblanca Verde CALIDAD 3
+,Fermentación,Kg,PP021,Aceituna Fermentada Aloreña Negra CALIDAD 1
+,Fermentación,Kg,PP022,Aceituna Fermentada Aloreña Negra CALIDAD 2
+,Fermentación,Kg,PP023,Aceituna Fermentada Aloreña Negra CALIDAD 3
+,Fermentación,Kg,PP024,Aceituna Fermentada Manzanilla Negra CALIDAD 1
+,Fermentación,Kg,PP025,Aceituna Fermentada Manzanilla Negra CALIDAD 2
+,Fermentación,Kg,PP026,Aceituna Fermentada Manzanilla Negra CALIDAD 3
+,Fermentación,Kg,PP027,Aceituna Fermentada Picual Negra CALIDAD 1
+,Fermentación,Kg,PP028,Aceituna Fermentada Picual Negra CALIDAD 2
+,Fermentación,Kg,PP029,Aceituna Fermentada Picual Negra CALIDAD 3
+,Fermentación,Kg,PP030,Aceituna Fermentada Hijiblanca Negra CALIDAD 1
+,Fermentación,Kg,PP031,Aceituna Fermentada Hijiblanca Negra CALIDAD 2
+,Fermentación,Kg,PP032,Aceituna Fermentada Hijiblanca Negra CALIDAD 3
+,Selección,Kg,PF025,Aceituna Seleccionada Aloreña Verde CALIDAD 1
+,Selección,Kg,PF026,Aceituna Seleccionada Aloreña Verde CALIDAD 2
+,Selección,Kg,PF027,Aceituna Seleccionada Aloreña Verde CALIDAD 3
+,Selección,Kg,PF028,Aceituna Seleccionada Manzanilla Verde CALIDAD 1
+,Selección,Kg,PF029,Aceituna Seleccionada Manzanilla Verde CALIDAD 2
+,Selección,Kg,PF030,Aceituna Seleccionada Manzanilla Verde CALIDAD 3
+,Selección,Kg,PF031,
+,Selección,Kg,PF032,
+,Selección,Kg,PF033,
+,Selección,Kg,PF034,
+,Selección,Kg,PF035,
+,Selección,Kg,PF036,
+,Selección,Kg,PF037,
+,Selección,Kg,PF038,
+,Selección,Kg,PF039,
+,Selección,Kg,PF040,
+,Selección,Kg,PF041,
+,Selección,Kg,PF042,
+,Selección,Kg,PF043,
+,Selección,Kg,PF044,
+,Selección,Kg,PF045,
+,Selección,Kg,PF046,
+,Selección,Kg,PF047,
+,Selección,Kg,PF048,
+,Selección,Kg,PP033,Aceituna 2º entamada Aloreña Verde CALIDAD 1
+,Selección,Kg,PP034,Aceituna 3º entamada Aloreña Verde CALIDAD 1
+,Selección,Kg,PP035,
+,Selección,Kg,PP036,
+,Selección,Kg,PP037,
+,Selección,Kg,PP038,
+,Selección,Kg,PP039,
+,Selección,Kg,PP040,
+,Selección,Kg,PP041,
+,Selección,Kg,PP042,
+,Selección,Kg,PP043,
+,Selección,Kg,PP044,
+,Selección,Kg,PP045,
+,Selección,Kg,PP046,
+,Selección,Kg,PP047,
+,Selección,Kg,PP048,
+,Selección,Kg,PP049,
+,Selección,Kg,PP050,
+,Selección,Kg,PP051,
+,Selección,Kg,PP052,
+,Selección,Kg,PP053,
+,Selección,Kg,PP054,
+,Selección,Kg,PP055,
+,Selección,Kg,PP056,
+,Selección,Kg,PP057,
+,Selección,Kg,PP058,
+,Selección,Kg,PP059,
+,Selección,Kg,PP060,
+,Selección,Kg,PP061,
+,Selección,Kg,PP062,
+,Selección,Kg,PP063,
+,Selección,Kg,PP064,
+,Selección,Kg,PP065,
+,Selección,Kg,PP066,
+,Selección,Kg,PP067,
+,Selección,Kg,PP068,
+,Selección,Kg,PP069,
+,Selección,Kg,PP070,
+,Selección,Kg,PP071,
+,Selección,Kg,PP072,
+,Selección,Kg,PP073,
+,Selección,Kg,PP074,
+,Selección,Kg,PP075,
+,Selección,Kg,PP076,
+,Selección,Kg,PP077,
+,Selección,Kg,PP078,
+,Selección,Kg,PP079,
+,Selección,Kg,PP080,
+,Selección,Kg,PP081,
+,Selección,Kg,SC001,SCRAP
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,Tamañado,Kg,PF048,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF049,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF050,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF051,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF052,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF053,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF054,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF055,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF056,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF057,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF058,Aceituna Aloreña Verde CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF059,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF060,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF061,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF062,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF063,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF064,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF065,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF066,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF067,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF068,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF069,Aceituna Aloreña Verde CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF070,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF071,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF072,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF073,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF074,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF075,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF076,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF077,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF078,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF079,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF080,Aceituna Aloreña Verde CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF081,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF082,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF083,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF084,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF085,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF086,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF087,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF088,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF089,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF090,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF091,Aceituna Manzanilla Verde CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF092,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF093,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF094,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF095,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF096,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF097,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF098,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF099,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF100,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF101,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF102,Aceituna Manzanilla Verde CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF103,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF104,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF105,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF106,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF107,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF108,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF109,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF110,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF111,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF112,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF113,Aceituna Manzanilla Verde CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF114,Aceituna Picual Verde CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF115,Aceituna Picual Verde CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF116,Aceituna Picual Verde CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF117,Aceituna Picual Verde CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF118,Aceituna Picual Verde CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF119,Aceituna Picual Verde CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF120,Aceituna Picual Verde CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF121,Aceituna Picual Verde CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF122,Aceituna Picual Verde CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF123,Aceituna Picual Verde CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF124,Aceituna Picual Verde CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF125,Aceituna Picual Verde CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF126,Aceituna Picual Verde CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF127,Aceituna Picual Verde CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF128,Aceituna Picual Verde CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF129,Aceituna Picual Verde CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF130,Aceituna Picual Verde CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF131,Aceituna Picual Verde CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF132,Aceituna Picual Verde CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF133,Aceituna Picual Verde CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF134,Aceituna Picual Verde CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF135,Aceituna Picual Verde CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF136,Aceituna Picual Verde CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF137,Aceituna Picual Verde CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF138,Aceituna Picual Verde CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF139,Aceituna Picual Verde CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF140,Aceituna Picual Verde CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF141,Aceituna Picual Verde CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF142,Aceituna Picual Verde CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF143,Aceituna Picual Verde CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF144,Aceituna Picual Verde CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF145,Aceituna Picual Verde CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF146,Aceituna Picual Verde CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF147,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF148,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF149,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF150,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF151,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF152,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF153,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF154,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF155,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF156,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF157,Aceituna Hijiblanca Verde CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF158,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF159,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF160,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF161,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF162,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF163,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF164,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF165,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF166,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF167,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF168,Aceituna Hijiblanca Verde CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF169,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF170,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF171,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF172,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF173,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF174,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF175,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF176,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF177,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF178,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF179,Aceituna Hijiblanca Verde CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF180,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF181,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF182,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF183,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF184,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF185,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF186,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF187,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF188,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF189,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF190,Aceituna Aloreña Negra CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF191,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF192,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF193,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF194,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF195,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF196,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF197,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF198,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF199,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF200,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF201,Aceituna Aloreña Negra CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF202,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF203,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF204,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF205,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF206,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF207,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF208,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF209,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF210,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF211,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF212,Aceituna Aloreña Negra CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF213,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF214,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF215,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF216,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF217,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF218,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF219,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF220,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF221,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF222,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF223,Aceituna Manzanilla Negra CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF224,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF225,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF226,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF227,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF228,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF229,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF230,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF231,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF232,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF233,Aceituna Manzanilla Negra CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF234,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF235,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF236,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF237,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF238,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF239,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF240,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF241,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF242,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF243,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF244,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF245,Aceituna Manzanilla Negra CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF246,Aceituna Picual Negra CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF247,Aceituna Picual Negra CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF248,Aceituna Picual Negra CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF249,Aceituna Picual Negra CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF250,Aceituna Picual Negra CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF251,Aceituna Picual Negra CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF252,Aceituna Picual Negra CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF253,Aceituna Picual Negra CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF254,Aceituna Picual Negra CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF255,Aceituna Picual Negra CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF256,Aceituna Picual Negra CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF257,Aceituna Picual Negra CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF258,Aceituna Picual Negra CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF259,Aceituna Picual Negra CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF260,Aceituna Picual Negra CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF261,Aceituna Picual Negra CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF262,Aceituna Picual Negra CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF263,Aceituna Picual Negra CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF264,Aceituna Picual Negra CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF265,Aceituna Picual Negra CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF266,Aceituna Picual Negra CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF267,Aceituna Picual Negra CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF268,Aceituna Picual Negra CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF269,Aceituna Picual Negra CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF270,Aceituna Picual Negra CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF271,Aceituna Picual Negra CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF272,Aceituna Picual Negra CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF273,Aceituna Picual Negra CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF274,Aceituna Picual Negra CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF275,Aceituna Picual Negra CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF276,Aceituna Picual Negra CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF277,Aceituna Picual Negra CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF278,Aceituna Picual Negra CALIDAD 3 - CALIBRE 500-600
+,Tamañado,Kg,PF279,Aceituna Picual Negra CALIDAD 1 - CALIBRE 80-120
+,Tamañado,Kg,PF280,Aceituna Picual Negra CALIDAD 1 - CALIBRE 120-160
+,Tamañado,Kg,PF281,Aceituna Picual Negra CALIDAD 1 - CALIBRE 160-200
+,Tamañado,Kg,PF282,Aceituna Picual Negra CALIDAD 1 - CALIBRE 200-240
+,Tamañado,Kg,PF283,Aceituna Picual Negra CALIDAD 1 - CALIBRE 240-280
+,Tamañado,Kg,PF284,Aceituna Picual Negra CALIDAD 1 - CALIBRE 280-320
+,Tamañado,Kg,PF285,Aceituna Picual Negra CALIDAD 1 - CALIBRE 320-360
+,Tamañado,Kg,PF286,Aceituna Picual Negra CALIDAD 1 - CALIBRE 360-400
+,Tamañado,Kg,PF287,Aceituna Picual Negra CALIDAD 1 - CALIBRE 400-450
+,Tamañado,Kg,PF288,Aceituna Picual Negra CALIDAD 1 - CALIBRE 450-500
+,Tamañado,Kg,PF289,Aceituna Picual Negra CALIDAD 1 - CALIBRE 500-600
+,Tamañado,Kg,PF290,Aceituna Picual Negra CALIDAD 2 - CALIBRE 80-120
+,Tamañado,Kg,PF291,Aceituna Picual Negra CALIDAD 2 - CALIBRE 120-160
+,Tamañado,Kg,PF292,Aceituna Picual Negra CALIDAD 2 - CALIBRE 160-200
+,Tamañado,Kg,PF293,Aceituna Picual Negra CALIDAD 2 - CALIBRE 200-240
+,Tamañado,Kg,PF294,Aceituna Picual Negra CALIDAD 2 - CALIBRE 240-280
+,Tamañado,Kg,PF295,Aceituna Picual Negra CALIDAD 2 - CALIBRE 280-320
+,Tamañado,Kg,PF296,Aceituna Picual Negra CALIDAD 2 - CALIBRE 320-360
+,Tamañado,Kg,PF297,Aceituna Picual Negra CALIDAD 2 - CALIBRE 360-400
+,Tamañado,Kg,PF298,Aceituna Picual Negra CALIDAD 2 - CALIBRE 400-450
+,Tamañado,Kg,PF299,Aceituna Picual Negra CALIDAD 2 - CALIBRE 450-500
+,Tamañado,Kg,PF300,Aceituna Picual Negra CALIDAD 2 - CALIBRE 500-600
+,Tamañado,Kg,PF301,Aceituna Picual Negra CALIDAD 3 - CALIBRE 80-120
+,Tamañado,Kg,PF302,Aceituna Picual Negra CALIDAD 3 - CALIBRE 120-160
+,Tamañado,Kg,PF303,Aceituna Picual Negra CALIDAD 3 - CALIBRE 160-200
+,Tamañado,Kg,PF304,Aceituna Picual Negra CALIDAD 3 - CALIBRE 200-240
+,Tamañado,Kg,PF305,Aceituna Picual Negra CALIDAD 3 - CALIBRE 240-280
+,Tamañado,Kg,PF306,Aceituna Picual Negra CALIDAD 3 - CALIBRE 280-320
+,Tamañado,Kg,PF307,Aceituna Picual Negra CALIDAD 3 - CALIBRE 320-360
+,Tamañado,Kg,PF308,Aceituna Picual Negra CALIDAD 3 - CALIBRE 360-400
+,Tamañado,Kg,PF309,Aceituna Picual Negra CALIDAD 3 - CALIBRE 400-450
+,Tamañado,Kg,PF310,Aceituna Picual Negra CALIDAD 3 - CALIBRE 450-500
+,Tamañado,Kg,PF311,Aceituna Picual Negra CALIDAD 3 - CALIBRE 500-600
+,Maquinado,Kg,PF312,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 80-120
+,Maquinado,Kg,PF313,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 120-160
+,Maquinado,Kg,PF314,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 160-200
+,Maquinado,Kg,PF315,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 200-240
+,Maquinado,Kg,PF316,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 240-280
+,Maquinado,Kg,PF317,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 280-320
+,Maquinado,Kg,PF318,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 320-360
+,Maquinado,Kg,PF319,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 360-400
+,Maquinado,Kg,PF320,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 400-450
+,Maquinado,Kg,PF321,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 450-500
+,Maquinado,Kg,PF322,Aceituna Rodajada Aloreña Verde CALIDAD 1 - CALIBRE 500-600
+,Maquinado,Kg,PF323,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 80-120
+,Maquinado,Kg,PF324,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 120-160
+,Maquinado,Kg,PF325,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 160-200
+,Maquinado,Kg,PF326,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 200-240
+,Maquinado,Kg,PF327,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 240-280
+,Maquinado,Kg,PF328,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 280-320
+,Maquinado,Kg,PF329,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 320-360
+,Maquinado,Kg,PF330,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 360-400
+,Maquinado,Kg,PF331,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 400-450
+,Maquinado,Kg,PF332,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 450-500
+,Maquinado,Kg,PF333,Aceituna Rodajada Aloreña Verde CALIDAD 2 - CALIBRE 500-600
+,Maquinado,Kg,PF334,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 80-120
+,Maquinado,Kg,PF335,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 120-160
+,Maquinado,Kg,PF336,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 160-200
+,Maquinado,Kg,PF337,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 200-240
+,Maquinado,Kg,PF338,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 240-280
+,Maquinado,Kg,PF339,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 280-320
+,Maquinado,Kg,PF340,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 320-360
+,Maquinado,Kg,PF341,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 360-400
+,Maquinado,Kg,PF342,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 400-450
+,Maquinado,Kg,PF343,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 450-500
+,Maquinado,Kg,PF344,Aceituna Rodajada Aloreña Verde CALIDAD 3 - CALIBRE 500-600
+,Maquinado,Kg,PF345,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 80-120
+,Maquinado,Kg,PF346,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 120-160
+,Maquinado,Kg,PF347,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 160-200
+,Maquinado,Kg,PF348,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 200-240
+,Maquinado,Kg,PF349,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 240-280
+,Maquinado,Kg,PF350,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 280-320
+,Maquinado,Kg,PF351,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 320-360
+,Maquinado,Kg,PF352,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 360-400
+,Maquinado,Kg,PF353,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 400-450
+,Maquinado,Kg,PF354,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 450-500
+,Maquinado,Kg,PF355,Aceituna Descarozada Aloreña Verde CALIDAD 1 - CALIBRE 500-600
+,Maquinado,Kg,PF356,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 80-120
+,Maquinado,Kg,PF357,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 120-160
+,Maquinado,Kg,PF358,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 160-200
+,Maquinado,Kg,PF359,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 200-240
+,Maquinado,Kg,PF360,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 240-280
+,Maquinado,Kg,PF361,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 280-320
+,Maquinado,Kg,PF362,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 320-360
+,Maquinado,Kg,PF363,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 360-400
+,Maquinado,Kg,PF364,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 400-450
+,Maquinado,Kg,PF365,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 450-500
+,Maquinado,Kg,PF366,Aceituna Descarozada Aloreña Verde CALIDAD 2 - CALIBRE 500-600
+,Maquinado,Kg,PF367,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 80-120
+,Maquinado,Kg,PF368,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 120-160
+,Maquinado,Kg,PF369,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 160-200
+,Maquinado,Kg,PF370,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 200-240
+,Maquinado,Kg,PF371,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 240-280
+,Maquinado,Kg,PF372,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 280-320
+,Maquinado,Kg,PF373,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 320-360
+,Maquinado,Kg,PF374,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 360-400
+,Maquinado,Kg,PF375,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 400-450
+,Maquinado,Kg,PF376,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 450-500
+,Maquinado,Kg,PF377,Aceituna Descarozada Aloreña Verde CALIDAD 3 - CALIBRE 500-600
