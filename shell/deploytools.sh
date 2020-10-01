@@ -7,7 +7,8 @@
 #exportea la rama default para este ambiente
 if [ -z "$1" ]
 then
-        export tag=origin/develop
+#       en ambientes de desarrollo, cambiar por origin/develop
+        export tag=origin/master
 else
 # podria informar un tag de release
         export tag=$1
@@ -50,8 +51,8 @@ if [ -d "application/modules" ]
 then
    echo ">>>> Actualizando submodulos"
    cd application/modules
-   git submodule foreach git reset --hard 2>&1 >>../$product.log
-   git submodule update --init 2>&1 >>../$product.log
+   git submodule foreach git reset --hard 2>&1 >>../../../$product.log
+   git submodule update --init 2>&1 >>../../../$product.log
    cd ../..
 fi
 git status
