@@ -1,0 +1,2 @@
+codigo,u_medida,descripcion
+RRR001,UN,PRUEBA RODO 2021
