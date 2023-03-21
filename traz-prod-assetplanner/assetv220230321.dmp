@@ -1,0 +1,2396 @@
+-- MySQL dump 10.16  Distrib 10.1.48-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: assetv2
+-- ------------------------------------------------------
+-- Server version	10.1.48-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Temporary table structure for view `abmdeposito`
+--
+
+DROP TABLE IF EXISTS `abmdeposito`;
+/*!50001 DROP VIEW IF EXISTS `abmdeposito`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `abmdeposito` (
+  `depositoId` tinyint NOT NULL,
+  `depositodescrip` tinyint NOT NULL,
+  `direccion` tinyint NOT NULL,
+  `GPS` tinyint NOT NULL,
+  `id_localidad` tinyint NOT NULL,
+  `id_provincial` tinyint NOT NULL,
+  `id_pais` tinyint NOT NULL,
+  `id_empresa` tinyint NOT NULL,
+  `estado` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `abmproveedores`
+--
+
+DROP TABLE IF EXISTS `abmproveedores`;
+/*!50001 DROP VIEW IF EXISTS `abmproveedores`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `abmproveedores` (
+  `provid` tinyint NOT NULL,
+  `provnombre` tinyint NOT NULL,
+  `provcuit` tinyint NOT NULL,
+  `provdomicilio` tinyint NOT NULL,
+  `provtelefono` tinyint NOT NULL,
+  `provmail` tinyint NOT NULL,
+  `id_empresa` tinyint NOT NULL,
+  `fec_alta` tinyint NOT NULL,
+  `estado` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `admcustomers`
+--
+
+DROP TABLE IF EXISTS `admcustomers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admcustomers` (
+  `cliId` int(11) NOT NULL AUTO_INCREMENT,
+  `cliName` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliLastName` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliDni` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliDateOfBirth` date DEFAULT NULL,
+  `cliNroCustomer` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliAddress` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliPhone` varchar(25) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliMovil` varchar(25) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliEmail` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliImagePath` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `zonaId` int(11) DEFAULT NULL,
+  `cliDay` int(11) DEFAULT '30',
+  `cliColor` varchar(7) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` varchar(4) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `cliRazonSocial` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  `plant_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`cliId`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `admstock`
+--
+
+DROP TABLE IF EXISTS `admstock`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admstock` (
+  `stkId` int(11) NOT NULL AUTO_INCREMENT,
+  `prodId` int(11) NOT NULL,
+  `stkCant` int(11) NOT NULL,
+  `usrId` int(11) NOT NULL,
+  `stkDate` datetime NOT NULL,
+  `stkMotive` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`stkId`),
+  KEY `prodId` (`prodId`),
+  KEY `usrId` (`usrId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `admvisits`
+--
+
+DROP TABLE IF EXISTS `admvisits`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admvisits` (
+  `vstId` int(11) NOT NULL AUTO_INCREMENT,
+  `vstDate` datetime NOT NULL,
+  `cliId` int(11) NOT NULL,
+  `vstNote` text COLLATE utf8_spanish_ci NOT NULL,
+  `vstStatus` varchar(2) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`vstId`),
+  KEY `cliId` (`cliId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ajustes`
+--
+
+DROP TABLE IF EXISTS `ajustes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ajustes` (
+  `ajus_id` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_ajuste` varchar(30) DEFAULT NULL,
+  `justificacion` varchar(200) DEFAULT NULL,
+  `usuario_app` varchar(30) DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `usuario` varchar(30) NOT NULL DEFAULT 'current_user()',
+  `fec_alta` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ajus_id`),
+  UNIQUE KEY `ajus_id` (`ajus_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_articulos`
+--
+
+DROP TABLE IF EXISTS `alm_articulos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_articulos` (
+  `arti_id` int(11) NOT NULL AUTO_INCREMENT,
+  `barcode` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `costo` decimal(14,2) NOT NULL,
+  `es_caja` tinyint(4) NOT NULL,
+  `cantidad_caja` int(11) DEFAULT NULL,
+  `punto_pedido` int(11) DEFAULT NULL,
+  `estado_id` varchar(45) COLLATE utf8_spanish_ci DEFAULT '1',
+  `unidad_id` int(11) NOT NULL,
+  `empr_id` int(11) NOT NULL,
+  `es_loteado` tinyint(4) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) NOT NULL DEFAULT '0',
+  `unidad_medida` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`arti_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=418 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_depositos`
+--
+
+DROP TABLE IF EXISTS `alm_depositos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_depositos` (
+  `depo_id` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) DEFAULT NULL,
+  `direccion` varchar(255) DEFAULT NULL,
+  `GPS` varchar(255) DEFAULT NULL,
+  `estado` varchar(4) DEFAULT NULL,
+  `loca_id` varchar(255) DEFAULT NULL,
+  `esta_id` varchar(255) DEFAULT NULL,
+  `pais_id` varchar(255) DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`depo_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_deta_entrega_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_deta_entrega_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_deta_entrega_materiales` (
+  `deen_id` int(11) NOT NULL AUTO_INCREMENT,
+  `enma_id` int(11) NOT NULL,
+  `cantidad` float NOT NULL,
+  `arti_id` int(11) NOT NULL,
+  `prov_id` int(10) DEFAULT NULL,
+  `lote_id` int(11) NOT NULL,
+  `depo_id` int(11) DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `precio` double DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`deen_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_deta_movimientos_internos`
+--
+
+DROP TABLE IF EXISTS `alm_deta_movimientos_internos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_deta_movimientos_internos` (
+  `demi_id` int(11) NOT NULL AUTO_INCREMENT,
+  `codigo` varchar(255) DEFAULT NULL,
+  `cantidad_cargada` float NOT NULL,
+  `cantidad_recibida` float DEFAULT NULL,
+  `fec_alta` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `usuario` varchar(100) DEFAULT 'hugoDS',
+  `usuario_app` varchar(100) DEFAULT NULL,
+  `moin_id` int(11) NOT NULL,
+  `arti_id` int(11) DEFAULT NULL,
+  `lote_id_origen` int(11) DEFAULT NULL,
+  `lote_id_destino` int(11) DEFAULT NULL,
+  PRIMARY KEY (`demi_id`),
+  KEY `alm_deta_movimientos_internos_FK` (`moin_id`),
+  KEY `alm_deta_movimientos_internos_FK_1` (`arti_id`),
+  KEY `alm_deta_movimientos_internos_lote_id_destino_FK` (`lote_id_destino`),
+  KEY `alm_deta_movimientos_internos_lote_id_origen_FK` (`lote_id_origen`),
+  CONSTRAINT `alm_deta_movimientos_internos_FK` FOREIGN KEY (`moin_id`) REFERENCES `alm_movimientos_internos` (`moin_id`),
+  CONSTRAINT `alm_deta_movimientos_internos_FK_1` FOREIGN KEY (`arti_id`) REFERENCES `alm_articulos` (`arti_id`),
+  CONSTRAINT `alm_deta_movimientos_internos_lote_id_destino_FK` FOREIGN KEY (`lote_id_destino`) REFERENCES `alm_lotes` (`lote_id`),
+  CONSTRAINT `alm_deta_movimientos_internos_lote_id_origen_FK` FOREIGN KEY (`lote_id_origen`) REFERENCES `alm_lotes` (`lote_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_deta_pedidos_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_deta_pedidos_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_deta_pedidos_materiales` (
+  `depe_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cantidad` float DEFAULT NULL,
+  `resto` float DEFAULT NULL,
+  `fecha_entrega` date DEFAULT NULL,
+  `fecha_entregado` date DEFAULT NULL,
+  `pema_id` int(11) NOT NULL,
+  `arti_id` int(11) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`depe_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_deta_recepcion_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_deta_recepcion_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_deta_recepcion_materiales` (
+  `dere_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cantidad` double NOT NULL,
+  `precio` double NOT NULL,
+  `empr_id` int(11) NOT NULL,
+  `rema_id` int(11) NOT NULL,
+  `lote_id` int(11) NOT NULL,
+  `prov_id` int(10) NOT NULL,
+  `arti_id` int(11) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`dere_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_entrega_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_entrega_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_entrega_materiales` (
+  `enma_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date DEFAULT NULL,
+  `solicitante` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `dni` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `destino` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `comprobante` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `pema_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`enma_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_lotes`
+--
+
+DROP TABLE IF EXISTS `alm_lotes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_lotes` (
+  `lote_id` int(11) NOT NULL AUTO_INCREMENT,
+  `prov_id` int(10) NOT NULL,
+  `arti_id` int(11) NOT NULL,
+  `depo_id` int(11) NOT NULL,
+  `codigo` varchar(255) DEFAULT NULL,
+  `fec_vencimiento` date DEFAULT NULL,
+  `cantidad` float DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `estado_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`lote_id`,`prov_id`,`arti_id`,`depo_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_movimientos_internos`
+--
+
+DROP TABLE IF EXISTS `alm_movimientos_internos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_movimientos_internos` (
+  `moin_id` int(11) NOT NULL AUTO_INCREMENT,
+  `estado` varchar(100) NOT NULL,
+  `num_comprobante` varchar(100) DEFAULT NULL,
+  `fec_envio` datetime NOT NULL,
+  `eliminado` tinyint(1) NOT NULL DEFAULT '0',
+  `patente` varchar(100) DEFAULT NULL,
+  `acoplado` varchar(100) DEFAULT NULL,
+  `conductor` varchar(100) DEFAULT NULL,
+  `fec_recepcion` date DEFAULT NULL,
+  `observaciones_recepcion` varchar(100) DEFAULT NULL,
+  `fec_alta` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `usuario` varchar(100) NOT NULL,
+  `usuario_app` varchar(100) NOT NULL,
+  `depo_id_origen` int(11) NOT NULL,
+  `depo_id_destino` int(11) NOT NULL,
+  `empr_id` int(11) NOT NULL,
+  PRIMARY KEY (`moin_id`),
+  KEY `alm_movimientos_internos_depo_id_origen_FK` (`depo_id_origen`),
+  KEY `alm_movimientos_internos_depo_id_destino_FK` (`depo_id_destino`),
+  CONSTRAINT `alm_movimientos_internos_depo_id_destino_FK` FOREIGN KEY (`depo_id_destino`) REFERENCES `alm_depositos` (`depo_id`),
+  CONSTRAINT `alm_movimientos_internos_depo_id_origen_FK` FOREIGN KEY (`depo_id_origen`) REFERENCES `alm_depositos` (`depo_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_pedidos_extraordinario`
+--
+
+DROP TABLE IF EXISTS `alm_pedidos_extraordinario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_pedidos_extraordinario` (
+  `peex_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date DEFAULT NULL,
+  `detalle` varchar(200) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `motivo_rechazo` varchar(200) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `case_id` int(11) DEFAULT NULL,
+  `pema_id` int(11) DEFAULT NULL,
+  `ortr_id` int(11) DEFAULT NULL,
+  `empr_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`peex_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_pedidos_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_pedidos_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_pedidos_materiales` (
+  `pema_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date NOT NULL,
+  `motivo_rechazo` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `justificacion` varchar(300) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `case_id` int(11) DEFAULT NULL,
+  `estado` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `ortr_id` int(11) NOT NULL,
+  `empr_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`pema_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_proveedores`
+--
+
+DROP TABLE IF EXISTS `alm_proveedores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_proveedores` (
+  `prov_id` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) DEFAULT NULL,
+  `cuit` varchar(50) DEFAULT NULL,
+  `domicilio` varchar(255) DEFAULT NULL,
+  `telefono` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `empr_id` int(11) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`prov_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_proveedores_articulos`
+--
+
+DROP TABLE IF EXISTS `alm_proveedores_articulos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_proveedores_articulos` (
+  `prov_id` int(10) NOT NULL,
+  `arti_id` int(11) NOT NULL,
+  PRIMARY KEY (`prov_id`,`arti_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `alm_recepcion_materiales`
+--
+
+DROP TABLE IF EXISTS `alm_recepcion_materiales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `alm_recepcion_materiales` (
+  `rema_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` datetime NOT NULL,
+  `comprobante` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `empr_id` int(11) NOT NULL,
+  `prov_id` int(10) NOT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`rema_id`),
+  UNIQUE KEY `comprobante_UNIQUE` (`comprobante`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `area`
+--
+
+DROP TABLE IF EXISTS `area`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `area` (
+  `id_area` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `estado` varchar(45) COLLATE utf8mb4_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_area`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Temporary table structure for view `articles`
+--
+
+DROP TABLE IF EXISTS `articles`;
+/*!50001 DROP VIEW IF EXISTS `articles`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `articles` (
+  `artId` tinyint NOT NULL,
+  `artBarCode` tinyint NOT NULL,
+  `artDescription` tinyint NOT NULL,
+  `artCoste` tinyint NOT NULL,
+  `artIsByBox` tinyint NOT NULL,
+  `artCantbox` tinyint NOT NULL,
+  `punto_pedido` tinyint NOT NULL,
+  `artEstado` tinyint NOT NULL,
+  `unidadmedida` tinyint NOT NULL,
+  `id_empresa` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `asignaherramientas`
+--
+
+DROP TABLE IF EXISTS `asignaherramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `asignaherramientas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `herrId` int(11) DEFAULT NULL,
+  `id_orden` int(11) DEFAULT NULL,
+  `fechahora` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `herrId` (`herrId`),
+  KEY `id_orden` (`id_orden`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `asignausuario`
+--
+
+DROP TABLE IF EXISTS `asignausuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `asignausuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usrId` int(11) DEFAULT NULL,
+  `id_orden` int(11) DEFAULT NULL,
+  `fechahora` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usrId` (`usrId`),
+  KEY `id_orden` (`id_orden`)
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `asp_detaplantillainsumos`
+--
+
+DROP TABLE IF EXISTS `asp_detaplantillainsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `asp_detaplantillainsumos` (
+  `deta_id` int(11) NOT NULL AUTO_INCREMENT,
+  `artId` int(11) NOT NULL,
+  `plant_id` int(11) NOT NULL,
+  PRIMARY KEY (`deta_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `asp_plantillainsumos`
+--
+
+DROP TABLE IF EXISTS `asp_plantillainsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `asp_plantillainsumos` (
+  `plant_id` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) DEFAULT NULL,
+  `plant_nombre` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`plant_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `asp_subtareas`
+--
+
+DROP TABLE IF EXISTS `asp_subtareas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `asp_subtareas` (
+  `id_subtarea` int(11) NOT NULL AUTO_INCREMENT,
+  `tareadescrip` varchar(5000) COLLATE utf8_spanish_ci NOT NULL,
+  `id_tarea` int(11) NOT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `duracion_prog` int(11) DEFAULT NULL,
+  `form_asoc` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_subtarea`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `case_empresa`
+--
+
+DROP TABLE IF EXISTS `case_empresa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `case_empresa` (
+  `case_id` int(11) NOT NULL,
+  `empr_id` int(11) NOT NULL,
+  PRIMARY KEY (`case_id`),
+  UNIQUE KEY `case_empresa_un` (`case_id`),
+  UNIQUE KEY `case_empresa_pk` (`case_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ciudades`
+--
+
+DROP TABLE IF EXISTS `ciudades`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ciudades` (
+  `idCiudades` int(11) NOT NULL AUTO_INCREMENT,
+  `Paises_Codigo` varchar(2) NOT NULL,
+  `Ciudad` varchar(100) NOT NULL,
+  PRIMARY KEY (`idCiudades`),
+  KEY `Paises_Codigo` (`Paises_Codigo`),
+  KEY `Ciudad` (`Ciudad`)
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `clientes` (
+  `clinteid` int(11) NOT NULL AUTO_INCREMENT,
+  `clientrazonsocial` varchar(255) DEFAULT NULL,
+  `clientdireccion` varchar(255) DEFAULT NULL,
+  `clientmail` varchar(255) DEFAULT NULL,
+  `clienttelefono` int(11) DEFAULT NULL,
+  `clientetelefono1` varchar(255) DEFAULT NULL,
+  `localidadid` varchar(50) DEFAULT NULL,
+  `paisid` varchar(2) DEFAULT NULL,
+  `provinciaid` int(11) DEFAULT NULL,
+  `cuenta_cuentaid` int(11) NOT NULL,
+  `plant_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`clinteid`),
+  KEY `fk_clientes_cuenta1_idx` (`cuenta_cuentaid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `componenteequipo`
+--
+
+DROP TABLE IF EXISTS `componenteequipo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `componenteequipo` (
+  `idcomponenteequipo` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `id_componente` int(11) NOT NULL,
+  `observacion` varchar(255) DEFAULT NULL,
+  `codigo` varchar(40) DEFAULT NULL,
+  `estado` varchar(4) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `sistemaid` int(11) NOT NULL,
+  PRIMARY KEY (`idcomponenteequipo`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `componentes`
+--
+
+DROP TABLE IF EXISTS `componentes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `componentes` (
+  `id_componente` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `id_equipo` int(11) DEFAULT NULL,
+  `fechahora` datetime DEFAULT NULL,
+  `informacion` text COLLATE utf8_spanish_ci,
+  `marcaid` int(11) DEFAULT NULL,
+  `pdf` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_componente`),
+  KEY `id_equipo` (`id_equipo`),
+  KEY `marcaid` (`marcaid`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `conffamily`
+--
+
+DROP TABLE IF EXISTS `conffamily`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `conffamily` (
+  `famId` int(11) NOT NULL AUTO_INCREMENT,
+  `famName` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`famId`)
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `confsubfamily`
+--
+
+DROP TABLE IF EXISTS `confsubfamily`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `confsubfamily` (
+  `sfamId` int(11) NOT NULL AUTO_INCREMENT,
+  `sfamName` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `famId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`sfamId`),
+  KEY `famId` (`famId`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `confzone`
+--
+
+DROP TABLE IF EXISTS `confzone`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `confzone` (
+  `zonaId` int(11) NOT NULL AUTO_INCREMENT,
+  `zonaName` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`zonaId`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `contratistaquipo`
+--
+
+DROP TABLE IF EXISTS `contratistaquipo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contratistaquipo` (
+  `id_equipo` int(1) NOT NULL,
+  `id_contratista` int(11) NOT NULL,
+  PRIMARY KEY (`id_contratista`,`id_equipo`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `contratistas`
+--
+
+DROP TABLE IF EXISTS `contratistas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contratistas` (
+  `id_contratista` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `contradireccion` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `contramail` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `contramail1` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `contracelular1` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `contracelular2` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `contratelefono` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `contracontacto` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` char(4) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_contratista`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `criticidad`
+--
+
+DROP TABLE IF EXISTS `criticidad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `criticidad` (
+  `id_criti` int(10) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `estado` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_criti`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `deta_ajustes`
+--
+
+DROP TABLE IF EXISTS `deta_ajustes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `deta_ajustes` (
+  `deaj_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cantidad` float DEFAULT NULL,
+  `empr_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `usuario` varchar(30) DEFAULT 'current_user()',
+  `lote_id` int(11) DEFAULT NULL,
+  `ajus_id` int(11) NOT NULL,
+  PRIMARY KEY (`deaj_id`),
+  UNIQUE KEY `deaj_id` (`deaj_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `deta_ordeninsumos`
+--
+
+DROP TABLE IF EXISTS `deta_ordeninsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `deta_ordeninsumos` (
+  `id_detaordeninsumo` int(11) NOT NULL AUTO_INCREMENT,
+  `id_ordeninsumo` int(11) DEFAULT NULL,
+  `loteid` int(10) NOT NULL,
+  `cantidad` double NOT NULL,
+  `precio` double DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_detaordeninsumo`),
+  KEY `loteid` (`loteid`),
+  KEY `id_ordeninsumo` (`id_ordeninsumo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `deta_ordenservicio`
+--
+
+DROP TABLE IF EXISTS `deta_ordenservicio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `deta_ordenservicio` (
+  `id_detasercicio` int(11) NOT NULL AUTO_INCREMENT,
+  `id_ordenservicio` int(11) NOT NULL,
+  `id_tarea` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `tiempo` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `observacion` text CHARACTER SET latin1,
+  `monto` double NOT NULL,
+  `id_componente` int(11) NOT NULL,
+  `rh` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_detasercicio`),
+  KEY `id_ordenservicio` (`id_ordenservicio`),
+  KEY `id_componente` (`id_componente`),
+  KEY `deta_ordenservicio_ibfk_2` (`id_tarea`)
+) ENGINE=InnoDB AUTO_INCREMENT=157 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `deta_remito`
+--
+
+DROP TABLE IF EXISTS `deta_remito`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `deta_remito` (
+  `detaremitoid` int(11) NOT NULL AUTO_INCREMENT,
+  `id_remito` int(11) NOT NULL,
+  `loteid` int(11) NOT NULL,
+  `cantidad` double NOT NULL,
+  `precio` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`detaremitoid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `empresas`
+--
+
+DROP TABLE IF EXISTS `empresas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `empresas` (
+  `id_empresa` int(50) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `empcuit` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `empdir` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `emptelefono` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `empemail` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `cliImagePath` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `localidadid` int(11) DEFAULT NULL,
+  `provinciaid` int(11) DEFAULT NULL,
+  `paisid` int(11) DEFAULT NULL,
+  `gps` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `empcelular` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `zonaId` int(11) DEFAULT NULL,
+  `emlogo` blob,
+  `clienteid` int(11) NOT NULL,
+  PRIMARY KEY (`id_empresa`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `envios`
+--
+
+DROP TABLE IF EXISTS `envios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `envios` (
+  `id_envio` int(10) NOT NULL AUTO_INCREMENT,
+  `fecha` date NOT NULL,
+  `ultimo_envio` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_envio`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `equipos`
+--
+
+DROP TABLE IF EXISTS `equipos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `equipos` (
+  `id_equipo` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `fecha_ingreso` date NOT NULL,
+  `fecha_baja` date NOT NULL,
+  `fecha_garantia` date NOT NULL,
+  `marca` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `codigo` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `ubicacion` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `id_sector` int(11) NOT NULL,
+  `id_hubicacion` double NOT NULL,
+  `id_grupo` int(11) NOT NULL,
+  `id_customer` int(11) DEFAULT NULL,
+  `id_criticidad` int(11) NOT NULL,
+  `estado` varchar(2) CHARACTER SET latin1 NOT NULL,
+  `fecha_ultimalectura` datetime NOT NULL,
+  `ultima_lectura` double NOT NULL,
+  `tipo_horas` varchar(10) CHARACTER SET latin1 NOT NULL,
+  `id-centrodecosto` double NOT NULL,
+  `valor_reposicion` double NOT NULL,
+  `fecha_reposicion` date NOT NULL,
+  `id_proveedor` double NOT NULL,
+  `valor` double NOT NULL,
+  `comprobante` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `descrip_tecnica` text COLLATE utf8_spanish_ci NOT NULL,
+  `id_unidad` int(11) NOT NULL,
+  `id_area` int(11) DEFAULT NULL,
+  `id_proceso` int(11) DEFAULT NULL,
+  `numero_serie` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `adjunto` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `meta_disponibilidad` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_equipo`),
+  KEY `id_empresa` (`id_empresa`),
+  KEY `id_sector` (`id_sector`),
+  KEY `id_criticidad` (`id_criticidad`),
+  KEY `id_grupo` (`id_grupo`)
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `equipos_archi_adjuntos`
+--
+
+DROP TABLE IF EXISTS `equipos_archi_adjuntos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `equipos_archi_adjuntos` (
+  `id_adjunto` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `adjunto` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `eliminado` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_adjunto`),
+  KEY `id_equipo` (`id_equipo`) USING BTREE,
+  CONSTRAINT `equipos_archi_adjuntos_FK` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id_equipo`)
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `establecimientos`
+--
+
+DROP TABLE IF EXISTS `establecimientos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `establecimientos` (
+  `esta_id` int(11) NOT NULL,
+  `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `lng` float DEFAULT NULL,
+  `lat` float DEFAULT NULL,
+  `calle` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `altura` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `localidad` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pais` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fec_alta` date DEFAULT NULL,
+  `usuario` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `empr_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`esta_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `fallas`
+--
+
+DROP TABLE IF EXISTS `fallas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fallas` (
+  `id_reparacion` int(100) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_reparacion`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ficha_equipo`
+--
+
+DROP TABLE IF EXISTS `ficha_equipo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ficha_equipo` (
+  `id_fichaequip` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `marca` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `modelo` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `numero_motor` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `numero_serie` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha_ingreso` date NOT NULL,
+  `dominio` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `fabricacion` int(11) NOT NULL,
+  `peso` float NOT NULL,
+  `bateria` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `hora_lectura` float NOT NULL,
+  PRIMARY KEY (`id_fichaequip`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `frm_formularios`
+--
+
+DROP TABLE IF EXISTS `frm_formularios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `frm_formularios` (
+  `form_id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `descripcion` varchar(300) CHARACTER SET latin1 DEFAULT NULL,
+  `empr_id` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`form_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `frm_instancias_formularios`
+--
+
+DROP TABLE IF EXISTS `frm_instancias_formularios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `frm_instancias_formularios` (
+  `id` int(11) NOT NULL,
+  `label` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `name` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `valor` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `requerido` tinyint(4) DEFAULT NULL,
+  `tida_id` int(11) DEFAULT NULL,
+  `valo_id` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `info_id` int(11) DEFAULT NULL,
+  `form_id` int(11) DEFAULT NULL,
+  `orden` int(11) DEFAULT NULL,
+  `aux` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `frm_items`
+--
+
+DROP TABLE IF EXISTS `frm_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `frm_items` (
+  `item_id` int(11) NOT NULL,
+  `label` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `name` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `requerido` tinyint(4) DEFAULT NULL,
+  `tida_id` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `valo_id` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `form_id` int(11) DEFAULT NULL,
+  `orden` int(11) DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  `aux` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`item_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `grupo`
+--
+
+DROP TABLE IF EXISTS `grupo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `grupo` (
+  `id_grupo` int(10) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_grupo`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `herramientas`
+--
+
+DROP TABLE IF EXISTS `herramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `herramientas` (
+  `herrId` int(11) NOT NULL AUTO_INCREMENT,
+  `herrcodigo` varchar(255) NOT NULL DEFAULT '',
+  `herrmarca` varchar(255) DEFAULT NULL,
+  `modid` int(10) DEFAULT NULL,
+  `tipoid` int(10) DEFAULT NULL,
+  `equip_estad` varchar(4) DEFAULT NULL,
+  `herrdescrip` varchar(255) DEFAULT NULL,
+  `depositoId` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`herrId`),
+  UNIQUE KEY `1` (`herrcodigo`) USING BTREE,
+  KEY `depositoId` (`depositoId`)
+) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `historial_lecturas`
+--
+
+DROP TABLE IF EXISTS `historial_lecturas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `historial_lecturas` (
+  `id_lectura` int(10) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(10) NOT NULL,
+  `lectura` int(10) NOT NULL,
+  `fecha` datetime NOT NULL,
+  `usrId` int(11) NOT NULL,
+  `observacion` text,
+  `operario_nom` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `turno` varchar(11) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(4) NOT NULL,
+  `obs` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id_lectura`),
+  KEY `historial_lecturas_fecha_IDX` (`fecha`) USING BTREE,
+  KEY `historial_lecturas_id_equipo_IDX` (`id_equipo`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=363 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE OR REPLACE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER actualizaLectura AFTER INSERT ON historial_lecturas FOR EACH ROW
+UPDATE equipos SET equipos.ultima_lectura = new.lectura WHERE new.id_equipo = equipos.id_equipo */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--
+-- Table structure for table `infocomponentes`
+--
+
+DROP TABLE IF EXISTS `infocomponentes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `infocomponentes` (
+  `infocompid` int(11) NOT NULL AUTO_INCREMENT,
+  `infocompdescrip` varchar(255) DEFAULT NULL,
+  `archivo` varchar(255) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `id_equipo` int(11) DEFAULT NULL,
+  PRIMARY KEY (`infocompid`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `infoequipos`
+--
+
+DROP TABLE IF EXISTS `infoequipos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `infoequipos` (
+  `infoid` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) DEFAULT NULL,
+  `archivo` varchar(255) DEFAULT NULL,
+  `id_equipo` int(11) DEFAULT NULL,
+  PRIMARY KEY (`infoid`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `informacionequipo`
+--
+
+DROP TABLE IF EXISTS `informacionequipo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `informacionequipo` (
+  `id_informacion` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `descripcion` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  `id_empresa` int(10) NOT NULL,
+  PRIMARY KEY (`id_informacion`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `marcasequipos`
+--
+
+DROP TABLE IF EXISTS `marcasequipos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `marcasequipos` (
+  `marcaid` int(11) NOT NULL AUTO_INCREMENT,
+  `marcadescrip` varchar(255) DEFAULT NULL,
+  `estado` varchar(3) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`marcaid`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `modelo_año`
+--
+
+DROP TABLE IF EXISTS `modelo_año`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `modelo_año` (
+  `id_año` int(100) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_año`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `orden_insumos`
+--
+
+DROP TABLE IF EXISTS `orden_insumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orden_insumos` (
+  `id_orden` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date DEFAULT NULL,
+  `solicitante` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `destino` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `comprobante` int(255) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `id_ot` int(11) NOT NULL,
+  PRIMARY KEY (`id_orden`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `orden_pedido`
+--
+
+DROP TABLE IF EXISTS `orden_pedido`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orden_pedido` (
+  `id_orden` int(11) NOT NULL AUTO_INCREMENT,
+  `id_proveedor` int(11) NOT NULL,
+  `nro_trabajo` int(11) NOT NULL,
+  `descripcion` text NOT NULL,
+  `fecha` datetime NOT NULL,
+  `fecha_entrega` datetime NOT NULL,
+  `fecha_entregada` datetime NOT NULL,
+  `estado` varchar(2) NOT NULL,
+  `id_trabajo` int(11) NOT NULL,
+  `observacion` text NOT NULL,
+  `numero_remito` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_orden`),
+  KEY `id_trabajo` (`id_trabajo`),
+  KEY `id_proveedor` (`id_proveedor`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `orden_servicio`
+--
+
+DROP TABLE IF EXISTS `orden_servicio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orden_servicio` (
+  `id_orden` int(11) NOT NULL AUTO_INCREMENT,
+  `lectura` double DEFAULT NULL,
+  `fecha` date NOT NULL,
+  `comprobante` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  `id_contratista` int(11) NOT NULL,
+  `id_solicitudreparacion` int(11) NOT NULL,
+  `valesid` int(11) DEFAULT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_ordenherraminetas` int(11) DEFAULT NULL,
+  `id_orden_insumo` int(11) DEFAULT NULL,
+  `id_ot` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `fechahorainicio` datetime NOT NULL,
+  `fechahorafin` datetime NOT NULL,
+  `horometroinicio` double NOT NULL,
+  `horometrofin` double NOT NULL,
+  PRIMARY KEY (`id_orden`),
+  KEY `id_equipo` (`id_equipo`) USING BTREE,
+  KEY `id_empresaservicio` (`id_contratista`) USING BTREE,
+  KEY `id_solicitudreparacion` (`id_solicitudreparacion`) USING BTREE,
+  KEY `id_orden_insumo` (`id_orden_insumo`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `orden_trabajo`
+--
+
+DROP TABLE IF EXISTS `orden_trabajo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orden_trabajo` (
+  `id_orden` int(11) NOT NULL AUTO_INCREMENT,
+  `id_tarea` int(11) DEFAULT NULL,
+  `nro` varchar(100) DEFAULT NULL,
+  `fecha` date NOT NULL,
+  `fecha_program` datetime NOT NULL,
+  `fecha_inicio` datetime NOT NULL,
+  `fecha_entrega` datetime NOT NULL,
+  `fecha_terminada` datetime NOT NULL,
+  `fecha_aviso` datetime NOT NULL,
+  `fecha_entregada` datetime NOT NULL,
+  `descripcion` text NOT NULL,
+  `cliId` int(11) NOT NULL DEFAULT '1',
+  `estado` varchar(2) NOT NULL,
+  `id_usuario` int(11) NOT NULL DEFAULT '1',
+  `id_usuario_a` int(11) DEFAULT NULL,
+  `id_usuario_e` int(11) NOT NULL,
+  `id_sucursal` int(11) NOT NULL DEFAULT '1',
+  `id_proveedor` int(11) NOT NULL,
+  `id_solicitud` int(11) NOT NULL,
+  `tipo` varchar(2) NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  `duracion` double DEFAULT NULL,
+  `id_tareapadre` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `lectura_programada` double DEFAULT NULL,
+  `lectura_ejecutada` double DEFAULT NULL,
+  `case_id` int(11) DEFAULT NULL,
+  `latitud` varchar(45) DEFAULT NULL,
+  `longitud` varchar(45) DEFAULT NULL,
+  `justificacion` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_orden`),
+  KEY `orden_trabajo_ibfk_1` (`cliId`) USING BTREE,
+  KEY `id_usuario` (`id_usuario`) USING BTREE,
+  KEY `id_usuariosolicitante` (`id_usuario_a`) USING BTREE,
+  KEY `usuario_entrega` (`id_usuario_e`) USING BTREE,
+  KEY `id_sucursal` (`id_sucursal`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=461 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `paises`
+--
+
+DROP TABLE IF EXISTS `paises`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `paises` (
+  `Codigo` varchar(2) NOT NULL,
+  `Pais` varchar(100) NOT NULL,
+  PRIMARY KEY (`Codigo`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `parametroequipo`
+--
+
+DROP TABLE IF EXISTS `parametroequipo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `parametroequipo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `paramId` int(11) NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  `valor` varchar(255) NOT NULL,
+  `fechahora` datetime NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_equipo` (`id_equipo`),
+  KEY `paramId` (`paramId`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `parametros`
+--
+
+DROP TABLE IF EXISTS `parametros`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `parametros` (
+  `paramId` int(11) NOT NULL AUTO_INCREMENT,
+  `paramdescrip` varchar(255) DEFAULT NULL,
+  `min` varchar(255) DEFAULT NULL,
+  `estado` varchar(5) NOT NULL,
+  `id_empresa` int(11) DEFAULT NULL,
+  PRIMARY KEY (`paramId`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `periodo`
+--
+
+DROP TABLE IF EXISTS `periodo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `periodo` (
+  `idperiodo` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) NOT NULL,
+  `estado` varchar(4) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`idperiodo`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `predictivo`
+--
+
+DROP TABLE IF EXISTS `predictivo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `predictivo` (
+  `predId` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `tarea_descrip` varchar(2000) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha` date NOT NULL,
+  `periodo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `horash` float DEFAULT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `pred_duracion` int(11) NOT NULL,
+  `id_unidad` int(11) NOT NULL,
+  `pred_canth` int(11) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `pred_adjunto` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`predId`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `preventivo`
+--
+
+DROP TABLE IF EXISTS `preventivo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `preventivo` (
+  `prevId` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `id_tarea` int(11) NOT NULL,
+  `perido` varchar(50) NOT NULL,
+  `cantidad` double NOT NULL,
+  `ultimo` date NOT NULL,
+  `id_componente` int(11) NOT NULL,
+  `critico1` double DEFAULT NULL,
+  `fechaprobable` date DEFAULT NULL,
+  `horash` int(11) NOT NULL,
+  `estadoprev` char(255) DEFAULT NULL,
+  `prev_duracion` double NOT NULL,
+  `id_unidad` int(11) NOT NULL,
+  `prev_canth` double NOT NULL,
+  `prev_adjunto` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `lectura_base` double DEFAULT NULL,
+  PRIMARY KEY (`prevId`),
+  KEY `id_equipo` (`id_equipo`),
+  KEY `id_tarea` (`id_tarea`),
+  KEY `id_componente` (`id_componente`)
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `proceso`
+--
+
+DROP TABLE IF EXISTS `proceso`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `proceso` (
+  `id_proceso` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `estado` varchar(45) COLLATE utf8mb4_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_proceso`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `remitos`
+--
+
+DROP TABLE IF EXISTS `remitos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `remitos` (
+  `remitoId` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` datetime NOT NULL,
+  `provid` int(11) NOT NULL,
+  `comprobante` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`remitoId`),
+  KEY `provid` (`provid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `rubro`
+--
+
+DROP TABLE IF EXISTS `rubro`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rubro` (
+  `id_rubro` int(10) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_rubro`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sector`
+--
+
+DROP TABLE IF EXISTS `sector`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sector` (
+  `id_sector` int(10) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_sector`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `seguro`
+--
+
+DROP TABLE IF EXISTS `seguro`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `seguro` (
+  `id_seguro` int(11) NOT NULL AUTO_INCREMENT,
+  `asegurado` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `ref` int(11) NOT NULL,
+  `numero_pliza` int(11) NOT NULL,
+  `fecha_inicio` datetime NOT NULL,
+  `fecha_vigencia` datetime NOT NULL,
+  `cobertura` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  PRIMARY KEY (`id_seguro`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `setupparam`
+--
+
+DROP TABLE IF EXISTS `setupparam`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `setupparam` (
+  `id_equipo` int(11) NOT NULL,
+  `id_parametro` int(11) NOT NULL,
+  `maximo` double NOT NULL,
+  `minimo` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_parametro`,`id_equipo`),
+  KEY `id_equipo` (`id_equipo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sisactions`
+--
+
+DROP TABLE IF EXISTS `sisactions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sisactions` (
+  `actId` int(11) NOT NULL AUTO_INCREMENT,
+  `actDescription` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `actDescriptionSpanish` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`actId`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sisgroups`
+--
+
+DROP TABLE IF EXISTS `sisgroups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sisgroups` (
+  `grpId` int(11) NOT NULL AUTO_INCREMENT,
+  `grpName` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `grpDash` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`grpId`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sisgroupsactions`
+--
+
+DROP TABLE IF EXISTS `sisgroupsactions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sisgroupsactions` (
+  `grpactId` int(11) NOT NULL AUTO_INCREMENT,
+  `grpId` int(11) NOT NULL,
+  `menuAccId` int(11) NOT NULL,
+  PRIMARY KEY (`grpactId`),
+  KEY `grpId` (`grpId`) USING BTREE,
+  KEY `menuAccId` (`menuAccId`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3802 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sismenu`
+--
+
+DROP TABLE IF EXISTS `sismenu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sismenu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parent` int(11) DEFAULT NULL,
+  `name` varchar(50) NOT NULL,
+  `icon` varchar(30) NOT NULL,
+  `slug` varchar(50) NOT NULL,
+  `number` int(11) NOT NULL,
+  `estado` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `parent` (`parent`)
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sismenuactions`
+--
+
+DROP TABLE IF EXISTS `sismenuactions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sismenuactions` (
+  `menuAccId` int(11) NOT NULL AUTO_INCREMENT,
+  `menuId` int(11) NOT NULL,
+  `actId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`menuAccId`)
+) ENGINE=InnoDB AUTO_INCREMENT=270 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sistema`
+--
+
+DROP TABLE IF EXISTS `sistema`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sistema` (
+  `sistemaid` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) NOT NULL,
+  `estado` varchar(5) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`sistemaid`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sisusers`
+--
+
+DROP TABLE IF EXISTS `sisusers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sisusers` (
+  `usrId` int(11) NOT NULL AUTO_INCREMENT,
+  `usrNick` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `usrName` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `usrLastName` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `usrPassword` varchar(5000) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `usrimag` blob NOT NULL,
+  PRIMARY KEY (`usrId`)
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `solicitud_reparacion`
+--
+
+DROP TABLE IF EXISTS `solicitud_reparacion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `solicitud_reparacion` (
+  `id_solicitud` int(100) NOT NULL AUTO_INCREMENT,
+  `numero` int(100) DEFAULT NULL,
+  `id_tipo` int(10) DEFAULT NULL,
+  `nivel` int(10) DEFAULT NULL,
+  `solicitante` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `f_solicitado` datetime NOT NULL,
+  `f_sugerido` date NOT NULL,
+  `hora_sug` time NOT NULL,
+  `id_equipo` int(10) NOT NULL,
+  `correctivo` int(10) DEFAULT NULL,
+  `causa` varchar(500) COLLATE utf8_spanish_ci NOT NULL,
+  `observaciones` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `estado` varchar(2) CHARACTER SET latin1 NOT NULL,
+  `usrId` int(11) NOT NULL,
+  `fecha_conformidad` date NOT NULL,
+  `observ_conformidad` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `foto1` blob,
+  `foto2` blob,
+  `foto3` blob,
+  `foto` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `case_id` int(11) DEFAULT NULL,
+  `urgente` tinyint(1) DEFAULT NULL,
+  `sol_adjunto` varchar(400) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_solicitud`),
+  KEY `id_equipo` (`id_equipo`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `sucursal`
+--
+
+DROP TABLE IF EXISTS `sucursal`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sucursal` (
+  `id_sucursal` int(11) NOT NULL AUTO_INCREMENT,
+  `dire` varchar(3000) NOT NULL,
+  `telefono` varchar(3000) NOT NULL,
+  `zonas` varchar(3000) NOT NULL,
+  `id_localidad` int(11) NOT NULL,
+  `descripc` varchar(3000) NOT NULL,
+  `estado` varchar(4) NOT NULL,
+  `id_empresa` int(10) NOT NULL,
+  PRIMARY KEY (`id_sucursal`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tareas`
+--
+
+DROP TABLE IF EXISTS `tareas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tareas` (
+  `id_tarea` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `estado` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `form_asoc` int(11) DEFAULT NULL,
+  `visible` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_tarea`)
+) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_back`
+--
+
+DROP TABLE IF EXISTS `tbl_back`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_back` (
+  `backId` int(11) NOT NULL AUTO_INCREMENT,
+  `id_equipo` int(11) NOT NULL,
+  `id_tarea` int(11) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `horash` float DEFAULT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `back_duracion` int(11) NOT NULL,
+  `id_unidad` int(11) DEFAULT NULL,
+  `back_canth` int(11) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `idcomponenteequipo` int(11) DEFAULT NULL,
+  `back_adjunto` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `sore_id` int(11) DEFAULT NULL,
+  `tarea_opcional` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`backId`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_backlogherramientas`
+--
+
+DROP TABLE IF EXISTS `tbl_backlogherramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_backlogherramientas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `backId` int(11) DEFAULT NULL,
+  `herrId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_backloginsumos`
+--
+
+DROP TABLE IF EXISTS `tbl_backloginsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_backloginsumos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `backId` int(11) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_detanotapedido`
+--
+
+DROP TABLE IF EXISTS `tbl_detanotapedido`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_detanotapedido` (
+  `id_detaNota` int(11) NOT NULL AUTO_INCREMENT,
+  `id_notaPedido` int(11) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `cantidad` int(11) DEFAULT NULL,
+  `provid` int(11) DEFAULT NULL,
+  `fechaEntrega` date DEFAULT NULL,
+  `fechaEntregado` date DEFAULT NULL,
+  `remito` int(11) DEFAULT NULL,
+  `estado` varchar(4) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_detaNota`),
+  KEY `id_notaPedido` (`id_notaPedido`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_detavaledescarga`
+--
+
+DROP TABLE IF EXISTS `tbl_detavaledescarga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_detavaledescarga` (
+  `detavaledid` int(11) NOT NULL AUTO_INCREMENT,
+  `valedid` int(11) DEFAULT NULL,
+  `herrId` int(11) DEFAULT NULL,
+  `observa` varchar(255) DEFAULT NULL,
+  `dest` varchar(255) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`detavaledid`),
+  KEY `equipid` (`herrId`) USING BTREE,
+  KEY `valedid` (`valedid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_detavalesalida`
+--
+
+DROP TABLE IF EXISTS `tbl_detavalesalida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_detavalesalida` (
+  `detavid` int(10) NOT NULL AUTO_INCREMENT,
+  `valesid` int(11) DEFAULT NULL,
+  `herrId` int(10) DEFAULT NULL,
+  `observa` text,
+  `dest` varchar(255) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`detavid`),
+  KEY `equiid` (`herrId`) USING BTREE,
+  KEY `valesid` (`valesid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_estado`
+--
+
+DROP TABLE IF EXISTS `tbl_estado`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_estado` (
+  `estadoid` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`estadoid`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_estanteria`
+--
+
+DROP TABLE IF EXISTS `tbl_estanteria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_estanteria` (
+  `id_estanteria` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fila` varchar(20) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `codigo` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_estanteria`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_listarea`
+--
+
+DROP TABLE IF EXISTS `tbl_listarea`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_listarea` (
+  `id_listarea` int(11) NOT NULL AUTO_INCREMENT,
+  `id_orden` int(11) NOT NULL,
+  `tareadescrip` varchar(5000) COLLATE utf8_spanish_ci NOT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `estado` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `info_id` int(11) DEFAULT NULL,
+  `id_subtarea` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_listarea`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_lote`
+--
+
+DROP TABLE IF EXISTS `tbl_lote`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_lote` (
+  `loteid` int(11) NOT NULL AUTO_INCREMENT,
+  `codigo` varchar(255) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `cantidad` varchar(255) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `lotestado` char(4) DEFAULT NULL,
+  `depositoid` int(11) DEFAULT NULL,
+  `usrId` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`loteid`),
+  KEY `depositoid` (`depositoid`),
+  KEY `artId` (`artId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_notapedido`
+--
+
+DROP TABLE IF EXISTS `tbl_notapedido`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_notapedido` (
+  `id_notaPedido` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date NOT NULL,
+  `id_ordTrabajo` int(11) NOT NULL,
+  `id_empresa` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_notaPedido`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_otadjuntos`
+--
+
+DROP TABLE IF EXISTS `tbl_otadjuntos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_otadjuntos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `otId` int(11) NOT NULL,
+  `ot_adjunto` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_otherramientas`
+--
+
+DROP TABLE IF EXISTS `tbl_otherramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_otherramientas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `otId` int(11) DEFAULT NULL,
+  `herrId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_otinsumos`
+--
+
+DROP TABLE IF EXISTS `tbl_otinsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_otinsumos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `otId` int(11) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_predictivoherramientas`
+--
+
+DROP TABLE IF EXISTS `tbl_predictivoherramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_predictivoherramientas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `predId` int(11) DEFAULT NULL,
+  `herrId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_predictivoinsumos`
+--
+
+DROP TABLE IF EXISTS `tbl_predictivoinsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_predictivoinsumos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `predId` int(11) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_preventivoherramientas`
+--
+
+DROP TABLE IF EXISTS `tbl_preventivoherramientas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_preventivoherramientas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prevId` int(11) DEFAULT NULL,
+  `herrId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `prevId` (`prevId`) USING BTREE,
+  KEY `tbl_preventivoherramientas_ibfk_2` (`herrId`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_preventivoinsumos`
+--
+
+DROP TABLE IF EXISTS `tbl_preventivoinsumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_preventivoinsumos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prevId` int(11) DEFAULT NULL,
+  `artId` int(11) DEFAULT NULL,
+  `cantidad` double NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `prevId` (`prevId`),
+  KEY `artId` (`artId`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_tipoordentrabajo`
+--
+
+DROP TABLE IF EXISTS `tbl_tipoordentrabajo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_tipoordentrabajo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_orden` int(11) NOT NULL,
+  `descripcion` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_trazacomponente`
+--
+
+DROP TABLE IF EXISTS `tbl_trazacomponente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_trazacomponente` (
+  `id_trazacomponente` int(11) NOT NULL AUTO_INCREMENT,
+  `idcomponenteequipo` int(11) NOT NULL,
+  `id_estanteria` int(11) DEFAULT NULL,
+  `fila` int(11) DEFAULT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `fecha_Entrega` datetime DEFAULT NULL,
+  `ult_recibe` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `observaciones` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `usrId` int(11) DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_trazacomponente`),
+  KEY `idcomponenteequipo` (`idcomponenteequipo`),
+  KEY `id_estanteria` (`id_estanteria`),
+  KEY `usrId` (`usrId`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_unidadmedida`
+--
+
+DROP TABLE IF EXISTS `tbl_unidadmedida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_unidadmedida` (
+  `id_unidadmedida` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(3000) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_unidadmedida`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_valedesacarga`
+--
+
+DROP TABLE IF EXISTS `tbl_valedesacarga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_valedesacarga` (
+  `valedid` int(11) NOT NULL AUTO_INCREMENT,
+  `valedfecha` datetime DEFAULT NULL,
+  `usrId` int(11) DEFAULT NULL,
+  `respons` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `dest` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`valedid`),
+  KEY `usrId` (`usrId`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tbl_valesalida`
+--
+
+DROP TABLE IF EXISTS `tbl_valesalida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_valesalida` (
+  `valesid` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha` date DEFAULT NULL,
+  `usrId` int(10) DEFAULT NULL,
+  `respons` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `dest` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`valesid`),
+  KEY `repid` (`usrId`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `tipocuenta`
+--
+
+DROP TABLE IF EXISTS `tipocuenta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipocuenta` (
+  `tipocuentaid` int(11) NOT NULL AUTO_INCREMENT,
+  `tipocuentadescrip` varchar(255) DEFAULT NULL,
+  `tipocuentamonto` varchar(50) DEFAULT NULL,
+  `tipocuentausuarios` varchar(50) DEFAULT NULL,
+  `tipocuentaactivos` varchar(50) DEFAULT NULL,
+  `tipocuentaempresas` varchar(50) DEFAULT NULL,
+  `apps` varchar(2) DEFAULT NULL,
+  `modulo_alerta` varchar(2) DEFAULT NULL,
+  PRIMARY KEY (`tipocuentaid`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `unidad_industrial`
+--
+
+DROP TABLE IF EXISTS `unidad_industrial`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `unidad_industrial` (
+  `id_unidad` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  PRIMARY KEY (`id_unidad`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `unidad_tiempo`
+--
+
+DROP TABLE IF EXISTS `unidad_tiempo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `unidad_tiempo` (
+  `id_unidad` int(11) NOT NULL AUTO_INCREMENT,
+  `unidaddescrip` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_unidad`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `usuarioasempresa`
+--
+
+DROP TABLE IF EXISTS `usuarioasempresa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuarioasempresa` (
+  `empresaid` int(11) NOT NULL,
+  `usrId` int(11) NOT NULL,
+  `fecha` datetime DEFAULT NULL,
+  `tipo` tinyint(1) NOT NULL,
+  `grpId` int(11) NOT NULL,
+  `estado` varchar(45) NOT NULL,
+  PRIMARY KEY (`empresaid`,`usrId`),
+  KEY `usrId` (`usrId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `utl_tablas`
+--
+
+DROP TABLE IF EXISTS `utl_tablas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `utl_tablas` (
+  `tabl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `tabla` varchar(50) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `valor` varchar(50) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `descripcion` varchar(200) COLLATE utf8_turkish_ci DEFAULT NULL,
+  `fec_alta` datetime DEFAULT CURRENT_TIMESTAMP,
+  `eliminado` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`tabl_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Final view structure for view `abmdeposito`
+--
+
+/*!50001 DROP TABLE IF EXISTS `abmdeposito`*/;
+/*!50001 DROP VIEW IF EXISTS `abmdeposito`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `abmdeposito` AS select `alm_depositos`.`depo_id` AS `depositoId`,`alm_depositos`.`descripcion` AS `depositodescrip`,`alm_depositos`.`direccion` AS `direccion`,`alm_depositos`.`GPS` AS `GPS`,`alm_depositos`.`loca_id` AS `id_localidad`,`alm_depositos`.`esta_id` AS `id_provincial`,`alm_depositos`.`pais_id` AS `id_pais`,`alm_depositos`.`empr_id` AS `id_empresa`,if((`alm_depositos`.`eliminado` = 1),'AN','AC') AS `estado` from `alm_depositos` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `abmproveedores`
+--
+
+/*!50001 DROP TABLE IF EXISTS `abmproveedores`*/;
+/*!50001 DROP VIEW IF EXISTS `abmproveedores`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `abmproveedores` AS select `alm_proveedores`.`prov_id` AS `provid`,`alm_proveedores`.`nombre` AS `provnombre`,`alm_proveedores`.`cuit` AS `provcuit`,`alm_proveedores`.`domicilio` AS `provdomicilio`,`alm_proveedores`.`telefono` AS `provtelefono`,`alm_proveedores`.`email` AS `provmail`,`alm_proveedores`.`empr_id` AS `id_empresa`,`alm_proveedores`.`fec_alta` AS `fec_alta`,if((`alm_proveedores`.`eliminado` = 1),'AN','AC') AS `estado` from `alm_proveedores` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `articles`
+--
+
+/*!50001 DROP TABLE IF EXISTS `articles`*/;
+/*!50001 DROP VIEW IF EXISTS `articles`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `articles` AS select `alm_articulos`.`arti_id` AS `artId`,`alm_articulos`.`barcode` AS `artBarCode`,`alm_articulos`.`descripcion` AS `artDescription`,`alm_articulos`.`costo` AS `artCoste`,`alm_articulos`.`es_caja` AS `artIsByBox`,`alm_articulos`.`cantidad_caja` AS `artCantbox`,`alm_articulos`.`punto_pedido` AS `punto_pedido`,if((`alm_articulos`.`eliminado` = 1),'AN','AC') AS `artEstado`,`alm_articulos`.`unidad_id` AS `unidadmedida`,`alm_articulos`.`empr_id` AS `id_empresa` from `alm_articulos` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-03-21 12:53:53
