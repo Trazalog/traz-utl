@@ -36,6 +36,14 @@ echo " "
 echo ">>>> Desplegando......"
 echo ">>>> Rama/Tag: $tag"
 echo ">>>> Producto: $product"
+date
+
+echo "=============TRAZALOG==============="  >>./$product.log
+echo " "  >>./$product.log
+echo ">>>> Desplegando......"  >>./$product.log
+echo ">>>> Rama/Tag: $tag"  >>./$product.log
+echo ">>>> Producto: $product"  >>./$product.log
+date  >>./$product.log
 
 
 #si no existe el directorio de backup lo genero
@@ -50,11 +58,11 @@ fi
 
 
 #backupeo archivos de configuracion
-cp $product/app/config/Database.php bk/$product/  2>&1 >>./$product.log
-cp $product/app/config/App.php bk/$product/ 2>&1 >>./$product.log
-cp $product/app/config/Constants.php bk/$product/ 2>&1 >>./$product.log
-cp $product/app/config/Logger.php bk/$product/ 2>&1 >>./$product.log
-cp $product/app/config/Routes.php bk/$product/ 2>&1 >>./$product.log
+cp $product/app/Config/Database.php bk/$product/  2>&1 >>./$product.log
+cp $product/app/Config/App.php bk/$product/ 2>&1 >>./$product.log
+cp $product/app/Config/Constants.php bk/$product/ 2>&1 >>./$product.log
+cp $product/app/Config/Logger.php bk/$product/ 2>&1 >>./$product.log
+cp $product/app/Config/Routes.php bk/$product/ 2>&1 >>./$product.log
 cp $product/.htaccess bk/$product/ 2>&1 >>./$product.log
 
 #backupeo si hay manifest
@@ -79,10 +87,10 @@ done
 cd $product
 git pull 2>&1 >>../$product.log
 git reset $tag --hard 2>&1 >>../$product.log
-if [ -d "application/modules" ]
+if [ -d "app/Modules" ]
 then
    echo ">>>> Actualizando submodulos"
-   cd application/modules
+   cd app/Modules
    git submodule foreach git reset --hard 2>&1 >>../../../$product.log
    git submodule update --init 2>&1 >>../../../$product.log
    cd ../..
@@ -101,32 +109,34 @@ then
          then
 		 echo "FATAL, no se encuentra WSO2 $WSO2VER en /trazaSystems/"
 	 else
-		export WSO2DSS="/trazaSystems/wso2mi-$WSO2VER/repository/deployment/server/carbonapps"
+		export WSO2CAR="/trazaSystems/wso2mi-$WSO2VER/repository/deployment/server/carbonapps"
 	 fi
 else
-		export WSO2DSS="/trazaSystems/wso2mi-$WSO2VER/repository/deployment/server/carbonapps"
+		export WSO2CAR="/trazaSystems/wso2mi-$WSO2VER/repository/deployment/server/carbonapps"
 fi
 
-echo ">>>> instalando dataservices en $WSO2DSS"
+echo ">>>> instalando dataservices en $WSO2CAR"
 #elimino los dataservices viejos y despliego los nuevos dss
-if [ ! -d $WSO2DSS ]
+if [ ! -d $WSO2CAR ]
 then
-        echo ">>>> creando directorio $WSO2DSS"
-	mkdir $WSO2DSS
+        echo ">>>> creando directorio $WSO2CAR"
+	mkdir $WSO2CAR
 fi
 
-echo ">>>> Generando dataservices de $product/_backend"
-cp $product/_backend/api/deploy/$tag.car $WSO2DSS
+echo ">>>> Generando artefactos wso2 de $product/backend/api/deploy"
+cp $product/backend/api/deploy/$tag.car $WSO2CAR 2>&1 >>./$product.log
 
-#también copio todos los dataservices de los submodulos
-for dire in $product/application/modules/*
+
+#también copio todos los artefactos de los submodulos
+for dire in $product/app/Modules/*
 do 
-        if [ -d $dire/api/deploy ]
+        if [ -d $dire/backend/api/deploy ]
         then
-		if [ -f $dire/api/deploy/*car ] 
+		if [ -f $dire/backend/api/deploy/*car ] 
         	then 
 			echo ">>>> instalando artefactos de $dire"
-			cp $dire/api/deploy/$tag.car $WSO2DSS
+			cp $dire/backend/api/deploy/$tag.car $WSO2CAR 2>&1 >>./$product.log
+
         	fi
 	fi
 done
@@ -134,11 +144,11 @@ done
 
 echo ">>>> restaurando configuracion"
 
-cp bk/$product/Database.php $product/application/config/ 2>&1 >>./$product.log
-cp bk/$product/App.php $product/application/config/ 2>&1 >>./$product.log
-cp bk/$product/Constants.php $product/application/config/ 2>&1 >>./$product.log
-cp bk/$product/Routes.php $product/application/config/ 2>&1 >>./$product.log
-cp bk/$product/Logger.php $product/application/config/ 2>&1 >>./$product.log
+cp bk/$product/Database.php $product/app/Config/ 2>&1 >>./$product.log
+cp bk/$product/App.php $product/app/Config/ 2>&1 >>./$product.log
+cp bk/$product/Constants.php $product/app/Config/ 2>&1 >>./$product.log
+cp bk/$product/Routes.php $product/app/Config/ 2>&1 >>./$product.log
+cp bk/$product/Logger.php $product/app/Config/ 2>&1 >>./$product.log
 cp bk/$product/.htaccess $product/ 2>&1 >>./$product.log
 if [ -f bk/$product/sw*js ]; then cp bk/$product/sw*.js $product/ 2>&1 >>./$product.log; fi
 if [ -f bk/$product/manifest.js ]; then cp bk/$product/manifest.json $product/ 2>&1 >>./$product.log; fi
