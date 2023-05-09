@@ -63,7 +63,9 @@ cp $product/app/Config/App.php bk/$product/ 2>&1 >>./$product.log
 cp $product/app/Config/Constants.php bk/$product/ 2>&1 >>./$product.log
 cp $product/app/Config/Logger.php bk/$product/ 2>&1 >>./$product.log
 cp $product/app/Config/Routes.php bk/$product/ 2>&1 >>./$product.log
+cp $product/app/Config/Autoload.php bk/$product/ 2>&1 >>./$product.log
 cp $product/.htaccess bk/$product/ 2>&1 >>./$product.log
+cp $product/.env bk/$product/ 2>&1 >>./$product.log
 
 #backupeo si hay manifest
 if [ -f "$product/manifest.json" ]
@@ -149,7 +151,9 @@ cp bk/$product/App.php $product/app/Config/ 2>&1 >>./$product.log
 cp bk/$product/Constants.php $product/app/Config/ 2>&1 >>./$product.log
 cp bk/$product/Routes.php $product/app/Config/ 2>&1 >>./$product.log
 cp bk/$product/Logger.php $product/app/Config/ 2>&1 >>./$product.log
+cp bk/$product/Autoload.php $product/app/Config/ 2>&1 >>./$product.log
 cp bk/$product/.htaccess $product/ 2>&1 >>./$product.log
+cp bk/$product/.env $product/ 2>&1 >>./$product.log
 if [ -f bk/$product/sw*js ]; then cp bk/$product/sw*.js $product/ 2>&1 >>./$product.log; fi
 if [ -f bk/$product/manifest.js ]; then cp bk/$product/manifest.json $product/ 2>&1 >>./$product.log; fi
 
