@@ -137,7 +137,7 @@ do
 		if [ -f $dire/backend/api/deploy/*car ] 
         	then 
 			echo ">>>> instalando artefactos de $dire"
-			cp $dire/backend/api/deploy/$tag.car $WSO2CAR 2>&1 >>./$product.log
+			cp $dire/backend/api/deploy/*.car $WSO2CAR 2>&1 >>./$product.log
 
         	fi
 	fi
