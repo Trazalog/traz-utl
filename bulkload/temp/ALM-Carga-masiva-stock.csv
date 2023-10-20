@@ -1,4 +1,3 @@
-cod_articulo,numero_proveedor,numero_deposito,cantidad,p_pesos,p_dolar;;
-arti021,1,3,5,100,5000;;
-arti021,1,3,5,100,5000;;
-;;
+cod_articulo,numero_proveedor,numero_deposito,cantidad,p_pesos,p_dolar
+arti021,1,3,5,100,5000
+arti021,1,3,5,100,5000
