@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION sta.bulkload_alm_lotes(p_archivo character varying,p_empr_id integer)
+CREATE OR REPLACE FUNCTION sta.bulkload_alm_lotes(p_archivo character varying, p_empr_id integer)
  RETURNS boolean
  LANGUAGE plpgsql
 AS $function$
@@ -11,13 +11,13 @@ AS $function$
 	v_p_pesos_aux float8;
 	v_p_dolar_aux float8;
 	cur_alm_lotecsv CURSOR FOR SELECT
-						ltrim(rtrim(upper(al."cod_articulo")))
+						ltrim(rtrim(upper(al."codArticulo")))
 						--, ltrim(rtrim(ae."numero_proveedor")) 
-						,al."numero_proveedor"
-						,al."numero_deposito"
+						,al."numeroProveedor"
+						,al."numeroDeposito"
 						,al."cantidad"
-						,al."p_pesos" 
-						,al."p_dolar" 
+						,al."Ppesos" 
+						,al."Pdolar" 
 						--, ltrim(rtrim(ae."numero_deposito")) 
 						--, ltrim(rtrim(ae."cantidad")) 
 						FROM sta.alm_lotes al 
@@ -34,15 +34,19 @@ AS $function$
  begin
 	 
 	  EXECUTE 
-			FORMAT('COPY sta.alm_lotes ("cod_articulo","numero_proveedor","numero_deposito","cantidad","p_pesos","p_dolar") FROM %s WITH CSV HEADER'
+			FORMAT('COPY sta.alm_lotes ("codArticulo","numeroProveedor","numeroDeposito","cantidad","Ppesos","Pdolar") FROM %s WITH CSV HEADER'
 		    ,p_archivo);
 	 
+		    RAISE INFO 'BULKARET: Archivo cargado';
+		   
+		   RAISE INFO 'BULKARET: Eliminando registros invalidos  %',p_empr_id;
 	 --elimino de la tabla si estan vacio los datos
 	 DELETE FROM sta.alm_lotes al 
-			WHERE al."cod_articulo" IS  null
-			OR (al."numero_proveedor" = '0' AND al."numero_deposito"  = '0' AND al."cantidad"  ='0')
-			OR (al."numero_proveedor" IS NULL AND al."numero_deposito" IS NULL AND al."cantidad"  IS NULL);
+			WHERE al."codArticulo" IS  null
+			OR (al."numeroProveedor" = '0' AND al."numeroDeposito"  = '0' AND al."cantidad"  ='0')
+			OR (al."numeroProveedor" IS NULL AND al."numeroDeposito" IS NULL AND al."cantidad"  IS NULL);
 		
+		RAISE INFO 'BULKARET: Insertando registros';
  	OPEN cur_alm_lotecsv;
  		loop 
  			fetch cur_alm_lotecsv into v_cod_articulo_aux, v_numero_proveedor_aux, v_numero_deposito_aux, v_cantidad_aux, v_p_pesos_aux, v_p_dolar_aux;

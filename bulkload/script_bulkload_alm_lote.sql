@@ -1,0 +1,1 @@
+select sta.bulkload_alm_lotes('''/var/www/html/traz-utl/bulkload/temp/ALM-Carga-masiva-stock.csv''',1);
