@@ -1,4 +1,4 @@
-"cliente","descripcion","fecha_ingreso","fecha_garantia","marca","codigo","sector","grupo","criticidad","estado","fecha_ultimalectura","ultima_lectura","descrip_tecnica","unidad_industrial","area","proceso","numero_serie","meta disponibilidad","procesado","fec_proceso"
+"cliente","descripcion","fecha_ingreso","fecha_garantia","marca","codigo","sector","grupo","criticidad","estado","fecha_ultimalectura","ultima_lectura","descrip_tecnica","unidad_industrial","area","proceso","numero_serie","meta_disponibilidad","procesado","fec_proceso"
 "POSCO","CAMION ARTICULADO","3/1/2024","3/1/2025","HYUNDAI","HA45-21984","TALLER CP2","ADT-01","ALTA","IN","6/16/2024","764","CAMION ADT","","CP2","ADT","21984","86","",""
 "POSCO","CAMION ARTICULADO","3/1/2024","3/1/2025","HYUNDAI","HA45-21985","TALLER CP2","ADT-02","ALTA","IN","6/16/2024","1104","CAMION ADT","","CP2","ADT","21985","86","",""
 "POSCO","CAMION ARTICULADO","3/1/2024","3/1/2025","HYUNDAI","HA45-21986","TALLER CP2","ADT-03","ALTA","IN","6/16/2024","617","CAMION ADT","","CP2","ADT","21986","86","",""
