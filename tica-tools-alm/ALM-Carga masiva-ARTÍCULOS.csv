@@ -1,0 +1,282 @@
+codigo,descripcion,unidad_medida,tipo
+AUD-01,Protector auditivo de copa COPA para Casco - LIBUS L-320,Unidades,Auditivo
+AUD-02,Protector auditivo de copa COPA para Casco - LIBUS L-340,Unidades,Auditivo
+AUD-03,Protector auditivo de copa COPA para Casco - LIBUS L-360 ,Unidades,Auditivo
+AUD-04,Protector auditivo trialeta QUANTUM LIBUS,Unidades,Auditivo
+BLO-01,Bloqueador Eléctrico Mini Pin,Unidades,Bloqueo
+BLO-02,Bloqueador Tarjeta 6 Posiciones Plástica,Unidades,Bloqueo
+BLO-03,Caja De Bloqueo Indirecto ,Unidades,Bloqueo
+BLO-04,Candado Sekur 40 Doble Traba,Unidades,Bloqueo
+BLO-05,Candado Termoplástico Dieléctrico,Unidades,Bloqueo
+BLO-06,Cartel Tarjeta Peligro 10 X 15,Unidades,Bloqueo
+BLO-07,Porta Candado Tipo Tijera ,Unidades,Bloqueo
+BLO-08,Precinto Cola raton - Numerados ,Unidades,Bloqueo
+CAL-01,Bota de Nieve - Himalaya - Talle 38,Unidades,Calzado
+CAL-02,Bota de Nieve - Himalaya - Talle 39,Unidades,Calzado
+CAL-03,Bota de Nieve - Himalaya - Talle 40,Unidades,Calzado
+CAL-04,Bota de Nieve - Himalaya - Talle 41,Unidades,Calzado
+CAL-05,Bota de Nieve - Himalaya - Talle 42,Unidades,Calzado
+CAL-06,Bota de Nieve - Himalaya - Talle 43,Unidades,Calzado
+CAL-07,Bota de Nieve - Himalaya - Talle 44,Unidades,Calzado
+CAL-08,Bota de Nieve - Himalaya - Talle 45,Unidades,Calzado
+CAL-09,Bota de Nieve - Himalaya - Talle 46,Unidades,Calzado
+CAL-10,Botin Minero - Funcional Capri - Talle 37,Unidades,Calzado
+CAL-11,Botin Minero - Funcional Capri - Talle 38,Unidades,Calzado
+CAL-12,Botin Minero - Funcional Capri - Talle 39,Unidades,Calzado
+CAL-13,Botin Minero - Funcional Capri - Talle 40,Unidades,Calzado
+CAL-14,Botin Minero - Funcional Capri - Talle 41,Unidades,Calzado
+CAL-15,Botin Minero - Funcional Capri - Talle 42,Unidades,Calzado
+CAL-16,Botin Minero - Funcional Capri - Talle 43,Unidades,Calzado
+CAL-17,Botin Minero - Funcional Capri - Talle 44,Unidades,Calzado
+CAL-18,Botin Minero - Funcional Capri - Talle 45,Unidades,Calzado
+CAL-19,Botin Minero - Funcional Capri - Talle 46,Unidades,Calzado
+CAL-20,Botin Minero - Funcional Rander - Talle 37,Unidades,Calzado
+CAL-21,Botin Minero - Funcional Rander - Talle 38,Unidades,Calzado
+CAL-22,Botin Minero - Funcional Rander - Talle 39,Unidades,Calzado
+CAL-23,Botin Minero - Funcional Rander - Talle 40,Unidades,Calzado
+CAL-24,Botin Minero - Funcional Rander - Talle 41,Unidades,Calzado
+CAL-25,Botin Minero - Funcional Rander - Talle 42,Unidades,Calzado
+CAL-26,Botin Minero - Funcional Rander - Talle 43,Unidades,Calzado
+CAL-27,Botin Minero - Funcional Rander - Talle 44,Unidades,Calzado
+CAL-28,Botin Minero - Funcional Rander - Talle 45,Unidades,Calzado
+CAL-29,Botin Minero - Funcional Rander - Talle 46,Unidades,Calzado
+CAL-30,Botin Minero - Solimin - Talle 37,Unidades,Calzado
+CAL-31,Botin Minero - Solimin - Talle 38,Unidades,Calzado
+CAL-32,Botin Minero - Solimin - Talle 39,Unidades,Calzado
+CAL-33,Botin Minero - Solimin - Talle 40,Unidades,Calzado
+CAL-34,Botin Minero - Solimin - Talle 41,Unidades,Calzado
+CAL-35,Botin Minero - Solimin - Talle 42,Unidades,Calzado
+CAL-36,Botin Minero - Solimin - Talle 43,Unidades,Calzado
+CAL-37,Botin Minero - Solimin - Talle 44,Unidades,Calzado
+CAL-38,Botin Minero - Solimin - Talle 45,Unidades,Calzado
+CAL-39,Botin Minero - Solimin - Talle 46,Unidades,Calzado
+CAL-40,Botin Minero - Voran - Talle 37,Unidades,Calzado
+CAL-41,Botin Minero - Voran - Talle 38,Unidades,Calzado
+CAL-42,Botin Minero - Voran - Talle 39,Unidades,Calzado
+CAL-43,Botin Minero - Voran - Talle 40,Unidades,Calzado
+CAL-44,Botin Minero - Voran - Talle 41,Unidades,Calzado
+CAL-45,Botin Minero - Voran - Talle 42,Unidades,Calzado
+CAL-46,Botin Minero - Voran - Talle 43,Unidades,Calzado
+CAL-47,Botin Minero - Voran - Talle 44,Unidades,Calzado
+CAL-48,Botin Minero - Voran - Talle 45,Unidades,Calzado
+CAL-49,Botin Minero - Voran - Talle 46,Unidades,Calzado
+CAL-50,Cadena Plastica (bolsa/rollo) ,Unidades,Calzado
+CAL-51,Cinta Peligro doble Faz 80x200m,Unidades,Calzado
+CAL-52,Cono Rigido 70cm ,Unidades,Calzado
+CAL-53,Malla de Seguridad Naranja,Unidades,Calzado
+CAL-54,Bota de Nieve - Himalaya - Talle 37,Unidades,Calzado
+CAL-55,Granpones -  Snowsun - Talle XXL,Unidades,Calzado
+CRA-01,Arnes para casco 3M H-700 - Cremallera,Unidades,Craneal
+CRA-02,Arnes para casco 3M H-700 - Simple ,Unidades,Craneal
+CRA-03,Arnes para casco LIBUS  Millenium CLASS S/V - Cremallera  ,Unidades,Craneal
+CRA-04,Arnes para casco LIBUS  Millenium CLASS S/V - Cremallera  Textil,Unidades,Craneal
+CRA-05,Arnes para casco LIBUS  Millenium CLASS S/V - Simple ,Unidades,Craneal
+CRA-06,Arnes para casco LIBUS  Millenium CLASS S/V - Simple Textil,Unidades,Craneal
+CRA-07,Casco 3M H-700 ,Unidades,Craneal
+CRA-08,Casco de Altura - Libus ANDES,Unidades,Craneal
+CRA-09,Casco Libus Millenium Amarillos,Unidades,Craneal
+CRA-10,Casco Libus Millenium Azul,Unidades,Craneal
+CRA-11,Casco Libus Millenium Blancos,Unidades,Craneal
+CRA-12,Mentoneras para Casco ,Unidades,Craneal
+FAC-01,Mascara Protectora Facial Plana ,Unidades,Facial
+FAC-02,Protector facial plano Rebatible,Unidades,Facial
+FAC-03,Protector solar Dermaglos FPS 50 por 250ml,Unidades,Facial
+FAC-04,Protector solar Dermaglos FPS 65 por 120g,Unidades,Facial
+FAC-05,Protector solar Dermaglos FPS 65 por 90gl,Unidades,Facial
+FAC-06,Protector solar labial Dermaglos  FPS 30,Unidades,Facial
+FAC-07,Protector solar labial Nivea  FPS 30,Unidades,Facial
+FAC-08,Soporte protector Facial Plano,Unidades,Facial
+FAC-09,Dermaglos Lapiz Linea Solar FPS 50,Unidades,Facial
+HER-01,Sierra Copa BI metalica 70 mm - Marca bremen ,Unidades,Herramientas 
+HER-02,Sierra Copa BI metalica 64 mm - Marca bremen ,Unidades,Herramientas 
+HER-03,Juego de Mecha Acero Rapido de 25 piezas - codigo AL8239,Unidades,Herramientas 
+LIB-01,Cinta Ancha Transparente - Medida 40x100 ,Unidades,Librería
+LIB-02,Resma 80g - A 4,Unidades,Librería
+LIB-03,Cuaderno A4 - Marca Avon ,Unidades,Librería
+MAN-01,Guante - Poliester Palma Baño PU Negro,Unidades,Manos
+MAN-02,Guante de Acrilonitrilo Verde - Talle 10,Unidades,Manos
+MAN-03,Guante de Acrilonitrilo Verde - Talle 11,Unidades,Manos
+MAN-04,Guante de Acrilonitrilo Verde - Talle 9 ,Unidades,Manos
+MAN-05,Guante MAPA ULTRANE 526 - Talle 10,Unidades,Manos
+MAN-06,Guante MAPA ULTRANE 526 - Talle 11,Unidades,Manos
+MAN-07,Guante MAPA ULTRANE 526 - Talle 9,Unidades,Manos
+MAN-08,Guantes - Anti Impacto - Talle 10 ,Unidades,Manos
+MAN-09,Guantes - Anti Impacto - Talle 11,Unidades,Manos
+MAN-10,Guantes - Anti Impacto - Talle 9,Unidades,Manos
+MAN-11,Guantes - Anticorte - Talle 10 ,Unidades,Manos
+MAN-12,Guantes - Anticorte - Talle 11,Unidades,Manos
+MAN-13,Guantes - Anticorte - Talle 9,Unidades,Manos
+MAN-14,Guantes de Nitrilo Azul - Poliéster bañando en látex Corrugado - Talle 10,Unidades,Manos
+MAN-15,Guantes de Nitrilo Azul - Poliéster bañando en látex Corrugado - Talle 8,Unidades,Manos
+MAN-16,Guantes de Nitrilo Azul - Poliéster bañando en látex Corrugado - Talle 9,Unidades,Manos
+MAN-17,Guantes de Nitrilo Rojos  - G13 poliéster bañando en látex - Talle 8,Unidades,Manos
+MAN-18,Guantes de Nitrilo Rojos  - G13 poliéster bañando en látex - Talle 9,Unidades,Manos
+MAN-19,Guantes de Nitrilo Rojos - G13 poliéster bañando en látex - Talle 10,Unidades,Manos
+MAN-20,Guantes de Vaqueta - Puño Corto C/Abrigo - Talle 10,Unidades,Manos
+MAN-21,Guantes de Vaqueta - Puño Corto C/Abrigo - Talle 11,Unidades,Manos
+MAN-22,Guantes de Vaqueta - Puño Corto C/Abrigo - Talle 9,Unidades,Manos
+MAN-23,Guantes de Vaqueta - Puño Corto S/Abrigo - Talle 10,Unidades,Manos
+MAN-24,Guantes de Vaqueta - Puño Corto S/Abrigo - Talle 11,Unidades,Manos
+MAN-25,Guantes de Vaqueta - Puño Corto S/Abrigo - Talle 9,Unidades,Manos
+MAN-26,Guantes de Vaqueta Puño Largo C/Abrigo - Talle 10,Unidades,Manos
+MAN-27,Guantes de Vaqueta Puño Largo C/Abrigo - Talle 11,Unidades,Manos
+MAN-28,Guantes de Vaqueta Puño Largo C/Abrigo - Talle 9,Unidades,Manos
+MAN-29,Guantes de Vaqueta Puño Largo S/Abrigo - Talle 10,Unidades,Manos
+MAN-30,Guantes de Vaqueta Puño Largo S/Abrigo - Talle 11,Unidades,Manos
+MAN-31,Guantes de Vaqueta Puño Largo S/Abrigo - Talle 9,Unidades,Manos
+MAN-32,Guantes Latex Descartable x 100 unidades - Talle L ,Unidades,Manos
+MAN-33,Guantes Latex Descartable x 100 unidades - Talle M ,Unidades,Manos
+MAN-34,Guantes Latex Descartable x 100 unidades - Talle S ,Unidades,Manos
+MAN-35,Guantes Latex Descartable x 100 unidades - Talle XL ,Unidades,Manos
+OCU-01,Anteojos de seguridad - Marca 3M - Claros ,Unidades,Ocular 
+OCU-02,Anteojos de seguridad - Marca 3M - Oscuros ,Unidades,Ocular 
+OCU-03,Anteojos de seguridad - Marca Libus Ecoline - Claros,Unidades,Ocular 
+OCU-04,Anteojos de seguridad - Marca Libus Ecoline - Oscuros,Unidades,Ocular 
+OCU-05,Anteojos de seguridad - Marca Libus Fall Dual - Claros,Unidades,Ocular 
+OCU-06,Anteojos de seguridad - Marca Libus Fall Dual - Oscuros,Unidades,Ocular 
+OCU-07,Anteojos de seguridad - Marca Steelpro X5 - Claros,Unidades,Ocular 
+OCU-08,Anteojos de seguridad - Marca Steelpro X5 - Oscuros,Unidades,Ocular 
+OCU-09,Anteojos De Seguridad - Marcas Libus  Hayat - Claros ,Unidades,Ocular 
+OCU-10,Anteojos De Seguridad - Marcas Libus  Hayat - Oscuros ,Unidades,Ocular 
+RES-01,Barbijos Descartable N95 Con Valvula - Marca Libus ,Unidades,Respiratoria 
+RES-02,Barbijos Descartable N95 Con Valvula- Marca 3M ,Unidades,Respiratoria 
+RES-03,Barbijos Descartable N95 Sin Valvula - Marca 3M ,Unidades,Respiratoria 
+RES-04,Barbijos Descartable N95 Sin Valvula - Marca Libus ,Unidades,Respiratoria 
+RES-05,Filtro 3M 2091,Unidades,Respiratoria 
+RES-06,Filtro 3M 6001,Unidades,Respiratoria 
+RES-07,Mascara Full face  3M Series 6800 ,Unidades,Respiratoria 
+RES-08,Semimascara 3M 6300T,Unidades,Respiratoria 
+RES-09,Barbijos BLS CLASSIC Con Valvula ,Unidades,Respiratoria 
+ROP-01,Calza y Camiseta 1° Piel - Talle L,Unidades,Ropa de Trabajo 
+ROP-02,Calza y Camiseta 1° Piel - Talle M,Unidades,Ropa de Trabajo 
+ROP-03,Calza y Camiseta 1° Piel - Talle S,Unidades,Ropa de Trabajo 
+ROP-04,Calza y Camiseta 1° Piel - Talle XL,Unidades,Ropa de Trabajo 
+ROP-05,Calza y Camiseta 1° Piel - Talle XXL,Unidades,Ropa de Trabajo 
+ROP-06,Calza y Camiseta 1° Piel - Talle XXXL,Unidades,Ropa de Trabajo 
+ROP-07,Camisa Jean - Talle L (46),Unidades,Ropa de Trabajo 
+ROP-08,Camisa Jean - Talle M (42/44),Unidades,Ropa de Trabajo 
+ROP-09,Camisa Jean - Talle S (38/40),Unidades,Ropa de Trabajo 
+ROP-10,Camisa Jean - Talle XL (48),Unidades,Ropa de Trabajo 
+ROP-11,Camisa Jean - Talle XXL (58),Unidades,Ropa de Trabajo 
+ROP-12,Camisa Jean - Talle XXXL (60),Unidades,Ropa de Trabajo 
+ROP-13,Campera Polar - Talle 2XL ,Unidades,Ropa de Trabajo 
+ROP-14,Campera Polar - Talle 3XL ,Unidades,Ropa de Trabajo 
+ROP-15,Campera Polar - Talle L ,Unidades,Ropa de Trabajo 
+ROP-16,Campera Polar - Talle M ,Unidades,Ropa de Trabajo 
+ROP-17,Campera Polar - Talle S ,Unidades,Ropa de Trabajo 
+ROP-18,Campera Polar - Talle XL ,Unidades,Ropa de Trabajo 
+ROP-19,Campera Termica Trucker Azul - Talle XL ,Unidades,Ropa de Trabajo 
+ROP-20,Campera Termica Trucker Azul - Talle S ,Unidades,Ropa de Trabajo 
+ROP-21,Campera Termica Trucker Azul - Talle M ,Unidades,Ropa de Trabajo 
+ROP-22,Campera Termica Trucker Azul - Talle L ,Unidades,Ropa de Trabajo 
+ROP-23,Campera Termica Trucker Azul - Talle 3XL ,Unidades,Ropa de Trabajo 
+ROP-24,Campera Termica Trucker Azul - Talle 2XL ,Unidades,Ropa de Trabajo 
+ROP-25,Campera Termica Trucker Roja - Talle 2XL ,Unidades,Ropa de Trabajo 
+ROP-26,Campera Termica Trucker Roja - Talle 3XL ,Unidades,Ropa de Trabajo 
+ROP-27,Campera Termica Trucker Roja - Talle L ,Unidades,Ropa de Trabajo 
+ROP-28,Campera Termica Trucker Roja - Talle M ,Unidades,Ropa de Trabajo 
+ROP-29,Campera Termica Trucker Roja - Talle S ,Unidades,Ropa de Trabajo 
+ROP-30,Campera Termica Trucker Roja - Talle XL ,Unidades,Ropa de Trabajo 
+ROP-31,Chaleco Gabardina - Talle L,Unidades,Ropa de Trabajo 
+ROP-32,Chaleco Gabardina - Talle S,Unidades,Ropa de Trabajo 
+ROP-33,Chaleco Gabardina - Talle S/M,Unidades,Ropa de Trabajo 
+ROP-34,Chaleco Gabardina - Talle XL,Unidades,Ropa de Trabajo 
+ROP-35,Chaleco Gabardina - Talle XXL,Unidades,Ropa de Trabajo 
+ROP-36,Chaleco Gabardina - Talle XXXL,Unidades,Ropa de Trabajo 
+ROP-37,Cubre Nunca Termico,Unidades,Ropa de Trabajo 
+ROP-38,Guantes Termicos - Talle Unico,Unidades,Ropa de Trabajo 
+ROP-39,Jardinero Termico - Talle 2XL,Unidades,Ropa de Trabajo 
+ROP-40,Jardinero Termico - Talle 3XL,Unidades,Ropa de Trabajo 
+ROP-41,Jardinero Termico - Talle L ,Unidades,Ropa de Trabajo 
+ROP-42,Jardinero Termico - Talle M ,Unidades,Ropa de Trabajo 
+ROP-43,Jardinero Termico - Talle S ,Unidades,Ropa de Trabajo 
+ROP-44,Jardinero Termico - Talle XL ,Unidades,Ropa de Trabajo 
+ROP-45,Medias Termicas - Talle Unico,Unidades,Ropa de Trabajo 
+ROP-46,Pantalon Jean - Talle 38 ,Unidades,Ropa de Trabajo 
+ROP-47,Pantalon Jean - Talle 40,Unidades,Ropa de Trabajo 
+ROP-48,Pantalon Jean - Talle 42,Unidades,Ropa de Trabajo 
+ROP-49,Pantalon Jean - Talle 44,Unidades,Ropa de Trabajo 
+ROP-50,Pantalon Jean - Talle 46,Unidades,Ropa de Trabajo 
+ROP-51,Pantalon Jean - Talle 48,Unidades,Ropa de Trabajo 
+ROP-52,Pantalon Jean - Talle 50,Unidades,Ropa de Trabajo 
+ROP-53,Pantalon Jean - Talle 52,Unidades,Ropa de Trabajo 
+ROP-54,Pantalon Jean - Talle 54,Unidades,Ropa de Trabajo 
+ROP-55,Pantalon Jean - Talle 56,Unidades,Ropa de Trabajo 
+ROP-56,Pantalon Jean - Talle 58,Unidades,Ropa de Trabajo 
+ROP-57,Pantalon Jean - Talle 60,Unidades,Ropa de Trabajo 
+VAR-01,Arnes de seguridad APOLO X-URBAN,Unidades,Varios
+VAR-02,"Cola de amarre X-URBAN 1,5M",Unidades,Varios
+VAR-03,Cubre Nunca de Grafa ,Unidades,Varios
+VAR-04,Rodilleras Lancelot,Unidades,Varios
+VAR-05,Tyvek DUPONT - Talle 2XL ,Unidades,Varios
+VAR-06,Tyvek DUPONT - Talle 3XL ,Unidades,Varios
+VAR-07,Tyvek DUPONT - Talle L ,Unidades,Varios
+VAR-08,Tyvek DUPONT - Talle XL ,Unidades,Varios
+VAR-09,Tyvek DUPONT Tychem C amarillos - Talle 2XL ,Unidades,Varios
+VAR-10,Tyvek DUPONT Tychem C amarillos - Talle 3XL ,Unidades,Varios
+VAR-11,Tyvek DUPONT Tychem C amarillos - Talle L ,Unidades,Varios
+VAR-12,Tyvek DUPONT Tychem C amarillos - Talle XL ,Unidades,Varios
+VAR-13,Tyvek KLEENGUARD  A40  - Talle 2XL ,Unidades,Varios
+VAR-14,Tyvek KLEENGUARD  A40  - Talle 3XL ,Unidades,Varios
+VAR-15,Tyvek KLEENGUARD  A40  - Talle L ,Unidades,Varios
+VAR-16,Tyvek KLEENGUARD  A40  - Talle XL ,Unidades,Varios
+VAR-18,Colchas polar - Bordadas ,Unidades,Varios
+VAR-19,Pilas 3A ,Unidades,Varios
+VAR-20,Pilas 2A ,Unidades,Varios
+VAR-21,Cinta Aisladora - Blanca,Unidades,Varios
+VAR-22,Cinta Aisladora - Amarilla,Unidades,Varios
+VAR-23,Cinta Aisladora - Celeste,Unidades,Varios
+VAR-24,Cinta Aisladora - Roja ,Unidades,Varios
+VAR-25,Cinta Aisladora - Negra,Unidades,Varios
+VAR-26,Cinta 3m Verde,Unidades,Varios
+VAR-27,Cinta 3m Blanca,Unidades,Varios
+BLO-04,Candado Sekur 40 Doble Traba,Unidades,Bloqueo
+BLO-07,Porta Candado Tipo Tijera ,Unidades,Bloqueo
+FAC-03,Protector solar Dermaglos FPS 50 por 250ml,Unidades,Facial
+FAC-05,Protector solar Dermaglos FPS 65 por 90gl,Unidades,Facial
+FAC-06,Protector solar labial Dermaglos  FPS 30,Unidades,Facial
+FAC-07,Protector solar labial Nivea  FPS 30,Unidades,Facial
+LIB-01,Cinta Ancha Transparente - Medida 40x100 ,Unidades,Librería
+MAN-08,Guantes - Anti Impacto - Talle 10 ,Unidades,Manos
+MAN-09,Guantes - Anti Impacto - Talle 11,Unidades,Manos
+MAN-16,Guantes de Nitrilo Azul - Poliéster bañando en látex Corrugado - Talle 9,Unidades,Manos
+MAN-17,Guantes de Nitrilo Rojos  - G13 poliéster bañando en látex - Talle 8,Unidades,Manos
+MAN-19,Guantes de Nitrilo Rojos - G13 poliéster bañando en látex - Talle 10,Unidades,Manos
+MAN-20,Guantes de Vaqueta - Puño Corto C/Abrigo - Talle 10,Unidades,Manos
+MAN-21,Guantes de Vaqueta - Puño Corto C/Abrigo - Talle 11,Unidades,Manos
+MAN-36,MAPA Professionnel Ultranitril 492 - Talle 9,Unidades,Manos
+MAN-37,MAPA Professionnel Ultranitril 492 - Talle 10,Unidades,Manos
+OCU-03,Anteojos de seguridad - Marca Libus Ecoline - Claros,Unidades,Ocular 
+OCU-04,Anteojos de seguridad - Marca Libus Ecoline - Oscuros,Unidades,Ocular 
+RES-03,Barbijos Descartable N95 Sin Valvula - Marca 3M ,Unidades,Respiratoria 
+RES-09,Barbijos Descartable Healthy Mask tricapa T25B,Unidades,Respiratoria 
+VAR-13,Tyvek KLEENGUARD  A40  - Talle 2XL ,Unidades,Varios
+VAR-14,Tyvek KLEENGUARD  A40  - Talle 3XL ,Unidades,Varios
+VAR-15,Tyvek KLEENGUARD  A40  - Talle L ,Unidades,Varios
+VAR-16,Tyvek KLEENGUARD  A40  - Talle XL ,Unidades,Varios
+VAR-21,Cinta Aisladora - Blanca,Unidades,Varios
+VAR-22,Cinta Aisladora - Amarilla,Unidades,Varios
+VAR-24,Cinta Aisladora - Roja ,Unidades,Varios
+MAN-08,Guantes - Anti Impacto - Talle 10 ,Unidades,Manos
+MAN-26,Guantes de Vaqueta Puño Largo C/Abrigo - Talle 10,Unidades,Manos
+MAN-19,Guantes de Nitrilo Rojos - G13 poliéster bañando en látex - Talle 10,Unidades,Manos
+MAN-07,Guante MAPA ULTRANE 526 - Talle 9,Unidades,Manos
+MAN-14,Guantes de Nitrilo Azul - Poliéster bañando en látex Corrugado - Talle 10,Unidades,Manos
+MAN-38,Guantes de Nitrilo Amarillo - Poliéster bañando en látex Corrugado - Talle 10,Unidades,Manos
+MAN-39,Guantes de Nitrilo Amarillo - Poliéster bañando en látex Corrugado - Talle 09,Unidades,Manos
+MAN-40,Guantes de Nitrilo Amarillo - Poliéster bañando en látex Corrugado - Talle 08,Unidades,Manos
+MAN-02,Guante de Acrilonitrilo Verde - Talle 10,Unidades,Manos
+OCU-03,Anteojos de seguridad - Marca Libus Ecoline - Claros,Unidades,Ocular 
+OCU-04,Anteojos de seguridad - Marca Libus Ecoline - Oscuros,Unidades,Ocular 
+ROP-35,Chaleco Gabardina - Talle XXL,Unidades,Ropa de Trabajo 
+VAR-13,Tyvek KLEENGUARD  A40  - Talle 2XL ,Unidades,Varios
+VAR-14,Tyvek KLEENGUARD  A40  - Talle 3XL ,Unidades,Varios
+VAR-15,Tyvek KLEENGUARD  A40  - Talle L ,Unidades,Varios
+VAR-16,Tyvek KLEENGUARD  A40  - Talle XL ,Unidades,Varios
+FAC-05,Protector solar Dermaglos FPS 65 por 90gl,Unidades,Facial
+FAC-07,Protector solar labial Nivea  FPS 30,Unidades,Facial
+CRA-09,Casco Libus Millenium Amarillos,Unidades,Craneal
+CRA-10,Casco Libus Millenium Azul,Unidades,Craneal
+CRA-11,Casco Libus Millenium Blancos,Unidades,Craneal
+CRA-03,Arnes para casco LIBUS  Millenium CLASS S/V - Cremallera  ,Unidades,Craneal
+CAL-55,Granpones -  Snowsun - Talle XXL,Unidades,Calzado
