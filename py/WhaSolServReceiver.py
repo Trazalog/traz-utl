@@ -267,7 +267,7 @@ def webhook():
         elif step == 1:
             session['falla'+str(from_number)] = incoming_msg
             session['images'+str(from_number)] = []
-            resp.message("Por favor ingrese una foto o responda '1' para continuar sin más fotos: ðŸ“·")
+            resp.message("Por favor ingrese una foto 🤳 o responda 1️⃣ para continuar sin más fotos")
         elif step == 2:
             if incoming_msg == "1":
                 response_message = create_issue(from_number)
@@ -282,14 +282,14 @@ def webhook():
                     session['images'+str(from_number)] = images
 
                     if len(images) < Config.MAX_IMAGES:
-                        resp.message(f"Imagen guardada. Puede subir otra imagen o responder '1' para continuar: ðŸ“·")
+                        resp.message(f"Imagen guardada. Puede subir otra foto 🤳 o responder 1️⃣ para continuar")
                         return str(resp)
                     else:
                         response_message = create_issue(from_number)
                         resp.message(response_message)
                         return str(resp)
                 else:
-                    resp.message("No se detectó una imagen. Por favor, suba una imagen o responda '1' para continuar.")
+                    resp.message("No se detectó una imagen. Por favor, suba una foto 🤳 o responda 1️⃣ para continuar.")
                     return str(resp)
         elif step == 3:
             response_message = create_issue(from_number)
