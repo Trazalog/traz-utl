@@ -77,18 +77,16 @@ def obtener_datos_usuario(from_number):
         app.logger.info("Error al invocar al servicio:", error)
         return None
     
-    
 # converts a given number to emoji      t
 def number_to_emoji(num):
     if num == 10:
-        return "1ï¸âƒ£0ï¸âƒ£"  # Concatenated emojis for 1 and 0
+        return "1️⃣0️⃣"  # Concatenated emojis for 1 and 0
     elif num == 11:
-        return "1ï¸âƒ£1ï¸âƒ£"  # Concatenated emojis for 1 and 1    
+        return "1️⃣1️⃣"  # Concatenated emojis for 1 and 1    
     elif 0 <= num <= 9:
         return f"{num}\uFE0F\u20E3"  # Keycap emoji format for numbers 1 to 9
     else:
         return "Number must be between 0 and 10."
-
 
 # Helper function to save media (image) to a directory
 def save_media(media_url, phone_number):
@@ -170,7 +168,8 @@ def create_issue(from_number):
                 app.logger.info(f"todo ok recibido {issue_response.text}")
                 issue_data = issue_response.json().get('resultado', {})
                 issue_id = issue_data['sose_id']
-                return f"Su solicitud de servicio número *{issue_id}* fue creada exitosamente.\nYa estamos trabajando! Puede consultar su avance en https://bit.ly/tzl-tools-man\n\n ¡Muchas gracias!"
+                return f"Su solicitud de servicio número *{issue_id}* fue creada exitósament👷🏽‍♂️👷🏽‍♂️👷🏽‍♂️\n "+\
+                                 "Ya estamos trabajando! 🧰🪛⛏️ Puede consultar su avance en https://bit.ly/tzl-tools-man\n\n ¡Muchas gracias! 🙏🏽"
             else:
                 app.logger.info(f"Error al crear issue {issue_response.status_code}")
                 app.logger.info(f"cuerpo {issue_response.text}")
@@ -260,13 +259,11 @@ def webhook():
                 resp.message("Id de usuario desconocido")
                 session['step'+str(from_number)] = 0
                 return str(resp)
-
-            
             resp.message(f"Bienvenido a Trazalog Tools Mantenimiento.\n*{user_nombre} {user_apellido}* ({user_correo})\n\n"+ 
-                         f"Vamos a ingresar una Solicitud de Servicio ðŸ§°ðŸª›â›ï¸ para el equipo:\n\n*{equi_codigo}{equi_description} âš™ï¸* \n\n"+
+                         f"Vamos a ingresar una Solicitud de Servicio 🧰🪛⛏️ para el equipo:\n\n*{equi_codigo}{equi_description} ⚙️* \n\n"+
                          f"Empresa:{equi_empresa} - Marca: {equi_marca} - Sector {equi_sector} - \nGrupo {equi_grupo} - Area: {equi_area} - Crit: {equi_criticidad} - Proc: {equi_proceso}\n\n"+
-                        "Por favor ingrese la falla detectada: ðŸ“\n")
-            resp
+                        "Por favor ingrese la falla detectada: 📝\n")
+            
         elif step == 1:
             session['falla'+str(from_number)] = incoming_msg
             session['images'+str(from_number)] = []
@@ -312,4 +309,5 @@ def webhook():
         return "Error"
 if __name__ == '__main__':
     app.run(host=Config.FLASK_HOST,debug=True,port=Config.FLASK_PORT)
+
 
