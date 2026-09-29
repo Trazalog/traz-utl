@@ -1,0 +1,227 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| Display Debug backtrace
+|--------------------------------------------------------------------------
+|
+| If set to TRUE, a backtrace will be displayed along with php errors. If
+| error_reporting is disabled, the backtrace will not display, regardless
+| of this setting
+|
+*/
+defined('SHOW_DEBUG_BACKTRACE') OR define('SHOW_DEBUG_BACKTRACE', TRUE);
+
+/*
+|--------------------------------------------------------------------------
+| File and Directory Modes
+|--------------------------------------------------------------------------
+|
+| These prefs are used when checking and setting modes when working
+| with the file system.  The defaults are fine on servers with proper
+| security, but you may wish (or even need) to change the values in
+| certain environments (Apache running a separate process for each
+| user, PHP under CGI with Apache suEXEC, etc.).  Octal values should
+| always be used to set the mode correctly.
+|
+*/
+defined('FILE_READ_MODE')  OR define('FILE_READ_MODE', 0644);
+defined('FILE_WRITE_MODE') OR define('FILE_WRITE_MODE', 0666);
+defined('DIR_READ_MODE')   OR define('DIR_READ_MODE', 0755);
+defined('DIR_WRITE_MODE')  OR define('DIR_WRITE_MODE', 0755);
+
+/*
+|--------------------------------------------------------------------------
+| File Stream Modes
+|--------------------------------------------------------------------------
+|
+| These modes are used when working with fopen()/popen()
+|
+*/
+defined('FOPEN_READ')                           OR define('FOPEN_READ', 'rb');
+defined('FOPEN_READ_WRITE')                     OR define('FOPEN_READ_WRITE', 'r+b');
+defined('FOPEN_WRITE_CREATE_DESTRUCTIVE')       OR define('FOPEN_WRITE_CREATE_DESTRUCTIVE', 'wb'); // truncates existing file data, use with care
+defined('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE')  OR define('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE', 'w+b'); // truncates existing file data, use with care
+defined('FOPEN_WRITE_CREATE')                   OR define('FOPEN_WRITE_CREATE', 'ab');
+defined('FOPEN_READ_WRITE_CREATE')              OR define('FOPEN_READ_WRITE_CREATE', 'a+b');
+defined('FOPEN_WRITE_CREATE_STRICT')            OR define('FOPEN_WRITE_CREATE_STRICT', 'xb');
+defined('FOPEN_READ_WRITE_CREATE_STRICT')       OR define('FOPEN_READ_WRITE_CREATE_STRICT', 'x+b');
+
+/*
+|--------------------------------------------------------------------------
+| Exit Status Codes
+|--------------------------------------------------------------------------
+|
+| Used to indicate the conditions under which the script is exit()ing.
+| While there is no universal standard for error codes, there are some
+| broad conventions.  Three such conventions are mentioned below, for
+| those who wish to make use of them.  The CodeIgniter defaults were
+| chosen for the least overlap with these conventions, while still
+| leaving room for others to be defined in future versions and user
+| applications.
+|
+| The three main conventions used for determining exit status codes
+| are as follows:
+|
+|    Standard C/C++ Library (stdlibc):
+|       http://www.gnu.org/software/libc/manual/html_node/Exit-Status.html
+|       (This link also contains other GNU-specific conventions)
+|    BSD sysexits.h:
+|       http://www.gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits
+|    Bash scripting:
+|       http://tldp.org/LDP/abs/html/exitcodes.html
+|
+*/
+defined('EXIT_SUCCESS')        OR define('EXIT_SUCCESS', 0); // no errors
+defined('EXIT_ERROR')          OR define('EXIT_ERROR', 1); // generic error
+defined('EXIT_CONFIG')         OR define('EXIT_CONFIG', 3); // configuration error
+defined('EXIT_UNKNOWN_FILE')   OR define('EXIT_UNKNOWN_FILE', 4); // file not found
+defined('EXIT_UNKNOWN_CLASS')  OR define('EXIT_UNKNOWN_CLASS', 5); // unknown class
+defined('EXIT_UNKNOWN_METHOD') OR define('EXIT_UNKNOWN_METHOD', 6); // unknown class member
+defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user input
+defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
+defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
+defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+#COMPONENTE FORMULARIOS
+define('FRM', 'traz-comp-formularios/');
+define('FILES', 'files/');
+
+# DNATO
+define('LOGIN', true);
+define('DNATO', 'http://www.cloudtrazalog.com/traz-comp-dnato/');
+
+
+define('PORT', ':3000/');
+
+define('PRD', 'traz-prod-trazasoft/');
+
+define('TST', 'traz-comp-tareasestandar/');
+define('TAREAS_DEFAULT_PROC', 'TST001');
+
+#TRAZ-COMP-BPM
+define('BPM', 'traz-comp-bpm/');
+
+define('BONITA_URL', 'http://localhost:8080/bonita/');
+
+
+define('BPM_PROCESS_ID_PEDIDOS_NORMALES', '5320766141990156821');
+
+define('BPM_PROCESS_ID_PEDIDOS_EXTRAORDINARIOS', '6866538875650512673');
+
+define('BPM_PROCESS_ID_PEDIDO_CONTENEDORES', '4914088989692457565');
+
+define('BPM_PROCESS_ID_RETIRO_CONTENEDORES', '6698304776086614055');
+
+define('BPM_PROCESS_ID_ENTREGA_ORDEN_TRANSPORTE', '7522690032220353691');
+
+//define('BPM_PROCESS_ID_TAREA_GENERICA', '6392964535017778147');
+define('BPM_PROCESS_ID_TAREA_GENERICA', '6497138811427682802');
+
+
+#SEIN PROCESO PRODUCTIVO
+define('BPM_PROCESS_ID_PROCESO_PRODUCTIVO', '5341284164133766327');
+
+#COMPONENTE ALMACENES
+define('ALM', 'traz-comp-almacenes/');
+define('viewOT', false);
+
+#COMPONENTE PAÑOl
+define('PAN', 'traz-comp-pan/');
+
+
+#YUDIKA REPARACION_NEUMATICOS
+define('BPM_PROCESS_ID_REPARACION_NEUMATICOS', '7860060150989359009');
+define('YUDIPROC', 'yudi-tools-almproc/');
+
+#SEIN -tools-ALM PAN TAR
+define('SEIN', 'sein-tools-almpantar/');
+
+define('BPM_PROCESS', json_encode(array(
+    BPM_PROCESS_ID_REPARACION_NEUMATICOS => ['nombre' => 'Proceso de Reparación de Neumáticos', 'color' => '#F39C12', 'proyecto'=>YUDIPROC, 'model'=>'Yudiproctareas'],	
+    BPM_PROCESS_ID_PEDIDOS_NORMALES => ['nombre' => 'Ped. Materiales', 'color' => '#F39C12', 'proyecto'=>ALM, 'model'=>'Almtareas'],
+    BPM_PROCESS_ID_PEDIDOS_EXTRAORDINARIOS => ['nombre' => 'Ped. Materiales Ext', 'color' => '#F39C12', 'proyecto'=>BPM, 'model'=>'Gentareas'],
+    '6866538875650512673' => ['nombre' => 'Proc. Mantenimiento', 'color' => '#00A65A', 'proyecto'=>BPM, 'model'=>'Gentareas'],
+    BPM_PROCESS_ID_PROCESO_PRODUCTIVO => ['nombre' => 'Servicios Industriales - Proceso Productivo', 'color' => '#0275d8', 'proyecto'=>SEIN, 'model'=>'Proceso_tareas'],
+    BPM_PROCESS_ID_TAREA_GENERICA  => ['nombre' => 'Tarea Genérica', 'color' => '#00A65A', 'proyecto'=>TST, 'model'=>'Tsttareas']
+)));
+
+define('BPM_ADMIN_USER', 'admin');
+define('BPM_ADMIN_PASS', '123traza');
+define('BPM_USER_PASS', '123');
+
+#ERRORES DE BONITA
+define('ASP_100', 'Fallo Conexión BPM');
+define('ASP_101', 'Error al Inciar Proceso');
+define('ASP_102', 'Error al Tomar Tarea');
+define('ASP_103', 'Error al Soltar Tarea');
+define('ASP_104', 'Error al Cerrar Tarea');
+define('ASP_105', 'Error al Obtener Vista Global');
+define('ASP_106', 'Error al Obtener Usuarios');
+define('ASP_107', 'Error al Asignar Usuario');
+define('ASP_108', 'Error al Guardar Comentarios');
+define('ASP_109', 'Error de Loggin');
+define('ASP_110', 'Error al Obtener Detalle Tarea');
+define('ASP_111', 'Error al Obtener Bandeja de Tareas');
+define('ASP_112', 'Error al Obtener Comentarios');
+define('ASP_113', 'Usuario No Encontrado');
+define('ASP_114', 'Error al Actualizar Variable');
+define('ASP_115', 'Error al Leer Variable');
+
+define('TOOLS_ADMIN_USER','jperez@prueba.com');
+
+
+//Nombre de Prouyecto
+define('MNOM', 'Tools');
+define('NOM', 'Trazalog Tools');
+
+//Vista por Defecto
+define('DEF_VIEW',BPM.'Proceso');
+
+#COMPONENTE CODIGO
+define('COD', 'traz-comp-codigos/');
+
+//TAREA ejecutada por Bonita automaticamente
+define('TAREA_IT','Ejecuta el Trabajo - Tools Tareas');
+
+/*
+|--------------------------------------------------------------------------
+| Variables HOST y REST
+|--------------------------------------------------------------------------
+|
+| Variables Locales
+|
+*/
+define('HOST', 'http://localhost:8283');
+define('RESTPT', HOST.'/services/produccionTest/'); //(3 reservicios sin resolver)
+define('API_URL', HOST.'/tools/log');
+define('REST_ALM', HOST.'/services/ALMDataService');
+define('REST_PRD', HOST.'/services/PRDDataService');
+define('REST_BPM', HOST.'/tools/bpm');
+define('REST_CORE', HOST.'/services/COREDataService');
+define('REST_FRM', HOST.'/services/FRMDataService');
+define('REST_PRD_LOTE', HOST.'/services/PRDLoteDataService');
+define('REST_PRD_ETAPAS', HOST.'/services/PRDEtapaDataService');
+define('REST_LOG', HOST.'/services/LOGDataService');
+define('REST_PRD_NOCON', HOST.'/services/PRDNoConsumiblesDataService');
+define('REST_TST', HOST.'/services/TARDataService');
+define('REST_API_BPM', HOST.'/tools/bpm/proceso/instancia');
+define('REST_TDS', HOST.'/services/TrazabilidadDataService');
+define('REST_PRO', HOST.'/services/PRODataService');
+define('REST_PAN', HOST.'/services/PANDataService');
+define('REST_COD', HOST.'/services/QRDataService');
+define('REST_SEIN', HOST.'/services/SeinDataService');
+
+#TRAZ-COMP-CALENDAR
+define('DURACION_JORNADA', '08:00');
+define('HORA_FIN_JORNADA', '18:00');
+define('HORA_INICIO_JORNADA','10:00');
+
+#TOKEN_TANGO TEST
+define('TOKEN_TANGO','D8EB5C71-BF7B-4F06-A242-3F887176FC60');
+
+#COMPANY TANGO
+define('COMPANY_TANGO', '3');
+#TOKEN_API_MANAGER TEST
+define('TOKEN_API_MANAGER','eyJ4NXQiOiJOMkpqTWpOaU0yRXhZalJrTnpaalptWTFZVEF4Tm1GbE5qZzRPV1UxWVdRMll6YzFObVk1TlEiLCJraWQiOiJNREpsTmpJeE4yRTFPR1psT0dWbU1HUXhPVEZsTXpCbU5tRmpaalEwWTJZd09HWTBOMkkwWXpFNFl6WmpOalJoWW1SbU1tUTBPRGRpTkRoak1HRXdNQV9SUzI1NiIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJhZG1pbiIsImF1dCI6IkFQUExJQ0FUSU9OIiwiYXVkIjoidnE2NUlBNHRqUWY4eV94UDlKdUVKcHJ4WDhZYSIsIm5iZiI6MTY5NTMwODk4MiwiYXpwIjoidnE2NUlBNHRqUWY4eV94UDlKdUVKcHJ4WDhZYSIsInNjb3BlIjoiZGVmYXVsdCIsImlzcyI6Imh0dHBzOlwvXC8xOTIuMTY4LjU0LjY5Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJleHAiOjMxNTUyOTUzMDg5ODIsImlhdCI6MTY5NTMwODk4MiwianRpIjoiNmY4YzcyYzItYzM5Mi00ODkwLWEzOTctYzBmODhmMGRlYTNjIn0.i41y_3n8i2c0ai9GqqD2IPiZpcGK5F7oYFK6k0UEkbUu3_ROQAWBaDXc_Gdbg_OwBXTlziTNGIvS7YOcTmhsP9t4oaWhba72KUa_92zNfOSdlLgtOQEIJTRuIy5MO86zMUtqhGRAs7fDRNVumrTTWICLvuDBHAcpXJfdADBGLnRv6ZCC2LEC_XxmbFP9KV8z9Oo0mVcz8GUZIeUZDPeLcBuA8LEBgK-ym7-s2v9WcjpyvdCjMszBXWJ6hpc4J9dg2eDSoAh3YvI9vIboKyeyfpfjreu8LMuXPUjSalEyj0q1RgmsPNMkSGLCzWKMYK2sCm3FovjjdRxyJOmh378hRA');

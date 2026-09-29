@@ -1,0 +1,348 @@
+BULKEQ:Insertando registros
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Combustible-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 39
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMCAD098OB-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Combustible-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 39
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMCAE450BP-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Combustible-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 39
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMCAD098OU-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Combustible-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 39
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMCAD098OB-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Combustible-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 39
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMCAE450BP-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Hidrogrua-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 41
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMHIAE015PW-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Hidrogrua-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 41
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMHIAE015PW-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Regador-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 40
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMRPMZ240-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Tractor-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 42
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCATAE823BH-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camion Volcador-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 43
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCAMVOGO344-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAE209FO-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAE418HL-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF564GJ-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF919OR-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF860LJ-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAD013XU-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF626MF-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF626ND-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAE209FO-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF919OR-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF572UY-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF860LJ-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Camioneta-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 44
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMCTAAF962SC-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Excavadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 45
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMEXC01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Excavadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 45
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMEXC02-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Grupos electrogenos 100 a 200 kW-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 46
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMGE01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Motoniveladora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 47
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMMOT01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Motoniveladora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 47
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMMOT02-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Motoniveladora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 47
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMMOT03-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Motoniveladora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 47
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMMOT04-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Motoniveladora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 47
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMMOT05-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA04-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA05-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA06-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA02-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Pala cargadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 48
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMPCA03-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Retropala-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 49
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMRTP02-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Retropala-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 49
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMRTP01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Topadora-criticidad:A Confirmar-area:JM-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 50
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 337
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: JM-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMTOP04-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Topadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 50
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMTOP01-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Topadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 50
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMTOP02-A -01-09-2023 00:00-1.1-...--
+BULKEQ:Procesando registro: descripcion:A Confirmar-marca:A Confirmar-numero_serie:-sector:Alta montaña-grupo:Topadora-criticidad:A Confirmar-area:FDS-proceso:0
+BULKEQ:MARCA 2 117
+BULKEQ:SECTOR :118
+BULKEQ:GRUPO 50
+BULKEQ:CRITICIDAD 32
+BULKEQ:AREA 338
+BULKEQ:PROCESO 48
+BULKEQ:Datos traducidos, insertando: FDS-A Confirmar-01-09-2023 00:00-01-09-2023 00:00-DMTOP03-A -01-09-2023 00:00-1.1-...--
+BULKEQ:No hay más registros
+BULKEQ:Registros cargados, marcando batch como procesado
+BULKEQ:Carga bulk terminada exitosamente

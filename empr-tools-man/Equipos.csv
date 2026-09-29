@@ -1,0 +1,44 @@
+Cliente,descripcion,fecha_ingreso,fecha_garantia,marca,codigo,sector,grupo,criticidad,estado,fecha_ultimalectura,ultima_lectura,descrip_tecnica,area,proceso,numero_serie,meta_disponibilidad,id_empresa
+JM,A Confirmar,,,A Confirmar,DMCAMCAD098OB,A Confirmar,Camion Combustible,A Confirmar,,,,,Batidero,A Confirmar,AD098OB,,12
+JM,A Confirmar,,,A Confirmar,DMCAMCAE450BP,A Confirmar,Camion Combustible,A Confirmar,,,,,Batidero,A Confirmar,AE450BP,,12
+JM,A Confirmar,,,A Confirmar,DMCAMRPMZ240,A Confirmar,Camion Regador,A Confirmar,,,,,Batidero,A Confirmar,PMZ240,,12
+JM,A Confirmar,,,A Confirmar,DMCATAE823BH,A Confirmar,Camion Tractor,A Confirmar,,,,,Batidero,A Confirmar,AE823BH,,12
+JM,A Confirmar,,,A Confirmar,DMCAMHIAE015PW,A Confirmar,Camion Hidrogrua,A Confirmar,,,,,Batidero,A Confirmar,AE015PW,,12
+JM,A Confirmar,,,A Confirmar,DMCTAAE209FO,A Confirmar,Camioneta,A Confirmar,,,,,Batidero,A Confirmar,AE209FO,,12
+JM,A Confirmar,,,A Confirmar,DMCTAAE418HL,A Confirmar,Camioneta,A Confirmar,,,,,Batidero,A Confirmar,AE418HL,,12
+JM,A Confirmar,,,A Confirmar,DMCTAAF564GJ,A Confirmar,Camioneta,A Confirmar,,,,,Batidero,A Confirmar,AF564GJ,,12
+JM,A Confirmar,,,A Confirmar,DMCTAAF919OR,A Confirmar,Camioneta,A Confirmar,,,,,Batidero,A Confirmar,AF919OR,,12
+JM,A Confirmar,,,A Confirmar,DMCTAAF860LJ,A Confirmar,Camioneta,A Confirmar,,,,,Batidero,A Confirmar,AF860LJ,,12
+JM,A Confirmar,,,A Confirmar,DMMOT01,A Confirmar,Motoniveladora,A Confirmar,,,,,Batidero,A Confirmar,CAT0012MCB9200943,,12
+JM,A Confirmar,,,A Confirmar,DMMOT02,A Confirmar,Motoniveladora,A Confirmar,,,,,Batidero,A Confirmar,1BZ670GAANC000147,,12
+JM,A Confirmar,,,A Confirmar,DMMOT03,A Confirmar,Motoniveladora,A Confirmar,,,,,Batidero,A Confirmar,W9201301,,12
+JM,A Confirmar,,,A Confirmar,DMPCA04,A Confirmar,Pala cargadora,A Confirmar,,,,,Batidero,A Confirmar,KMTWA108CNBB20514,,12
+JM,A Confirmar,,,A Confirmar,DMPCA05,A Confirmar,Pala cargadora,A Confirmar,,,,,Batidero,A Confirmar,KMTWA108TNBB20622,,12
+JM,A Confirmar,,,A Confirmar,DMPCA06,A Confirmar,Pala cargadora,A Confirmar,,,,,Batidero,A Confirmar,KMTWA108ENBB20620,,12
+JM,A Confirmar,,,A Confirmar,DMRTP02,A Confirmar,Retropala,A Confirmar,,,,,Batidero,A Confirmar,L9P04456,,12
+JM,A Confirmar,,,A Confirmar,DMTOP04,A Confirmar,Topadora,A Confirmar,,,,,Batidero,A Confirmar,KMT0D101L01012118,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAD013XU,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AD013XU,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF626MF,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF626MF,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF626ND,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF626ND,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAE209FO,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AE209FO,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF919OR,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF919OR,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF572UY,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF572UY,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF860LJ,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF860LJ,,12
+FDS,A Confirmar,,,A Confirmar,DMCTAAF962SC,A Confirmar,Camioneta,A Confirmar,,,,,Filo del Sol,A Confirmar,AF962SC,,12
+FDS,A Confirmar,,,A Confirmar,DMCAMCAD098OU,A Confirmar,Camion Combustible,A Confirmar,,,,,Filo del Sol,A Confirmar,AD098OU,,12
+FDS,A Confirmar,,,A Confirmar,DMCAMCAD098OB,A Confirmar,Camion Combustible,A Confirmar,,,,,Filo del Sol,A Confirmar,AD098OB,,12
+FDS,A Confirmar,,,A Confirmar,DMCAMHIAE015PW,A Confirmar,Camion Hidrogrua,A Confirmar,,,,,Filo del Sol,A Confirmar,AE015PW,,12
+FDS,A Confirmar,,,A Confirmar,DMCAMCAE450BP,A Confirmar,Camion Combustible,A Confirmar,,,,,Filo del Sol,A Confirmar,AE450BP,,12
+FDS,A Confirmar,,,A Confirmar,DMCAMVOGO344,A Confirmar,Camion Volcador,A Confirmar,,,,,Filo del Sol,A Confirmar,OGO344,,12
+FDS,A Confirmar,,,A Confirmar,DMEXC01,A Confirmar,Excavadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTPC244CHBB50394,,12
+FDS,A Confirmar,,,A Confirmar,DMEXC02,A Confirmar,Excavadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTPC282KMBB10842,,12
+FDS,A Confirmar,,,A Confirmar,DMGE01,A Confirmar,Grupos electrogenos 100 a 200 kW,A Confirmar,,,,,Filo del Sol,A Confirmar,DELTGEN,,12
+FDS,A Confirmar,,,A Confirmar,DMMOT04,A Confirmar,Motoniveladora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTGD026HNBB40317,,12
+FDS,A Confirmar,,,A Confirmar,DMMOT05,A Confirmar,Motoniveladora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTGD026ANBB40363,,12
+FDS,A Confirmar,,,A Confirmar,DMPCA01,A Confirmar,Pala cargadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTWA108HMBB20436,,12
+FDS,A Confirmar,,,A Confirmar,DMPCA02,A Confirmar,Pala cargadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMTWA108LNBB20517,,12
+FDS,A Confirmar,,,A Confirmar,DMPCA03,A Confirmar,Pala cargadora,A Confirmar,,,,,Filo del Sol,A Confirmar,CAT00950JM5K06085,,12
+FDS,A Confirmar,,,A Confirmar,DMRTP01,A Confirmar,Retropala,A Confirmar,,,,,Filo del Sol,A Confirmar,CAT000416LL9P02403,,12
+FDS,A Confirmar,,,A Confirmar,DMTOP01,A Confirmar,Topadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMT0D074ENCO82338,,12
+FDS,A Confirmar,,,A Confirmar,DMTOP02,A Confirmar,Topadora,A Confirmar,,,,,Filo del Sol,A Confirmar,MB800774,,12
+FDS,A Confirmar,,,A Confirmar,DMTOP03,A Confirmar,Topadora,A Confirmar,,,,,Filo del Sol,A Confirmar,KMT0D074ENC082422,,12

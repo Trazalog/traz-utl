@@ -1,0 +1,499 @@
+BULKEQ:Insertando registros
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:COMPACTADOR CATERPILLAR 825H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigo825-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCOMPACTADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0825HJAZW00325-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-COMPACTADOR CATERPILLAR 825H-01-12-2023-1-1-2025-825-AC---COMPACTADOR-CAT0825HJAZW00325-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:AUTOBOMBA SCANIA P380-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoAB-01-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaAUTOBOMBA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3667382-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-AUTOBOMBA SCANIA P380-01-12-2023-1-1-2025-AB-01-AC---AUTOBOMBA-9BSP6X400B3667382-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:AUTOELEVADOR TAYLOR TX330M-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:TAYLOR-codigoAU-01-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaAUTOELEVADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:S GE 33661-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 234
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-AUTOELEVADOR TAYLOR TX330M-01-12-2023-1-1-2025-AU-01-AC---AUTOELEVADOR-S GE 33661-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:AUTOELEVADOR CATERPILLAR -fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoAU-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaAUTOELEVADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:AT28C50239-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-AUTOELEVADOR CATERPILLAR -01-12-2023-1-1-2025-AU-02-AC---AUTOELEVADOR-AT28C50239-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CAPILAR SCANIA P380-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCC-26-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCAPILAR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3667697-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CAPILAR SCANIA P380-01-12-2023-1-1-2025-CC-26-AC---CAPILAR-9BSP6X400B3667697-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR 988H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0988HCBXY04536-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR 988H-01-12-2023-1-1-2025-CF-02-AC---CARGADORA-CAT0988HCBXY04536-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR 980H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-04-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0980HCJMS02921-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR 980H-01-12-2023-1-1-2025-CF-04-AC---CARGADORA-CAT0980HCJMS02921-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR 980H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0980HKJMS03278-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR 980H-01-12-2023-1-1-2025-CF-05-AC---CARGADORA-CAT0980HKJMS03278-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR 988H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0988HLBXY04542-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR 988H-01-12-2023-1-1-2025-CF-07-AC---CARGADORA-CAT0988HLBXY04542-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR 966H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-10-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0966HCRYF00377-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR 966H-01-12-2023-1-1-2025-CF-10-AC---CARGADORA-CAT0966HCRYF00377-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CARGADORA CATERPILLAR IT62H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCF-12-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CATIT62HAMG00659-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CARGADORA CATERPILLAR IT62H-01-12-2023-1-1-2025-CF-12-AC---CARGADORA-CATIT62HAMG00659-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:HIDROGRUA SCANIA P420-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCH-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaHIDROGRUA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3673418-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-HIDROGRUA SCANIA P420-01-12-2023-1-1-2025-CH-02-AC---HIDROGRUA-9BSP6X400B3673418-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:HIDROGRUA SCANIA P420-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCH-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaHIDROGRUA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400C3802561-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-HIDROGRUA SCANIA P420-01-12-2023-1-1-2025-CH-05-AC---HIDROGRUA-9BSP6X400C3802561-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:ARTICULADO CATERPILLAR 725-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCL-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaARTICULADO-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT00725VB1L02407-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-ARTICULADO CATERPILLAR 725-01-12-2023-1-1-2025-CL-02-AC---ARTICULADO-CAT00725VB1L02407-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:ARTICULADO CATERPILLAR 725-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCL-03-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaARTICULADO-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT00725KB1L02399-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-ARTICULADO CATERPILLAR 725-01-12-2023-1-1-2025-CL-03-AC---ARTICULADO-CAT00725KB1L02399-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:ARTICULADO CATERPILLAR 725-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCL-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaARTICULADO-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT00725PB1L02403-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-ARTICULADO CATERPILLAR 725-01-12-2023-1-1-2025-CL-05-AC---ARTICULADO-CAT00725PB1L02403-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:ARTICULADO CATERPILLAR 740-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoCL-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaARTICULADO-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:N/A-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-ARTICULADO CATERPILLAR 740-01-12-2023-1-1-2025-CL-07-AC---ARTICULADO-N/A-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CAPILAR SCANIA P380-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCP-77-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCAPILAR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3667615-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CAPILAR SCANIA P380-01-12-2023-1-1-2025-CP-77-AC---CAPILAR-9BSP6X400B3667615-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:REGADOR SCANIA P380-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCR-13-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaREGADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3682217-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-REGADOR SCANIA P380-01-12-2023-1-1-2025-CR-13-AC---REGADOR-9BSP6X400B3682217-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:REGADOR SCANIA P310-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCR-17-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaREGADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP4X200B3673409-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-REGADOR SCANIA P310-01-12-2023-1-1-2025-CR-17-AC---REGADOR-9BSP4X200B3673409-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:CAMION TIJERA MACLEAN TM3008-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:MACLEAN-codigoCT-11-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaCAMION TIJERA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:SL3 - 065-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 231
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-CAMION TIJERA MACLEAN TM3008-01-12-2023-1-1-2025-CT-11-AC---CAMION TIJERA-SL3 - 065-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:TRACTOR CARRETÓN SCANIA P420-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCT-16-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaTRACTOR CARRETÓN-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3682070-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-TRACTOR CARRETÓN SCANIA P420-01-12-2023-1-1-2025-CT-16-AC---TRACTOR CARRETÓN-9BSP6X400B3682070-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:VOLCADOR SCANIA P310-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCV-10-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaVOLCADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP8X400B3667212-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-VOLCADOR SCANIA P310-01-12-2023-1-1-2025-CV-10-AC---VOLCADOR-9BSP8X400B3667212-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:VOLCADOR SCANIA P420-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCV-26-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaVOLCADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP8X400B3667356-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-VOLCADOR SCANIA P420-01-12-2023-1-1-2025-CV-26-AC---VOLCADOR-9BSP8X400B3667356-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:VOLCADOR SCANIA P380-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoCV-31-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaVOLCADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3673070-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-VOLCADOR SCANIA P380-01-12-2023-1-1-2025-CV-31-AC---VOLCADOR-9BSP6X400B3673070-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:GRUA GROVE 55Tn RT760E-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:GROVE-codigoGR-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaGRUA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:231511-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 229
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-GRUA GROVE 55Tn RT760E-01-12-2023-1-1-2025-GR-07-AC---GRUA-231511-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:GRUA GROVE 55Tn RT760E-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:GROVE-codigoGR-08-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaGRUA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:231513-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 229
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-GRUA GROVE 55Tn RT760E-01-12-2023-1-1-2025-GR-08-AC---GRUA-231513-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:GRUA GROVE 75Tn RT880E-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:GROVE-codigoGR-16-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaGRUA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:231555-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 229
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-GRUA GROVE 75Tn RT880E-01-12-2023-1-1-2025-GR-16-AC---GRUA-231555-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:LUBRICADOR SCANIA P230-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoLB-01-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaLUBRICADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP4X20003673758-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-LUBRICADOR SCANIA P230-01-12-2023-1-1-2025-LB-01-AC---LUBRICADOR-9BSP4X20003673758-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:LUBRICADOR SCANIA -fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:SCANIA-codigoLB-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaLUBRICADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:9BSP6X400B3671181-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 233
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-LUBRICADOR SCANIA -01-12-2023-1-1-2025-LB-02-AC---LUBRICADOR-9BSP6X400B3671181-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:MINICARGADORA CATERPILLAR 246C-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoMC-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaMINICARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0246CVJAY05161-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-MINICARGADORA CATERPILLAR 246C-01-12-2023-1-1-2025-MC-05-AC---MINICARGADORA-CAT0246CVJAY05161-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:MINICARGADORA CATERPILLAR 246C-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoMC-06-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaMINICARGADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:N/A-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-MINICARGADORA CATERPILLAR 246C-01-12-2023-1-1-2025-MC-06-AC---MINICARGADORA-N/A-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:MANIPULADOR HAULOTTE HTL4017-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:HAULOTTE-codigoMM-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaMANIPULADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:ID:CT400905 EQUIPO:TDC2012L042VC3MI74A-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 230
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-MANIPULADOR HAULOTTE HTL4017-01-12-2023-1-1-2025-MM-07-AC---MANIPULADOR-ID:CT400905 EQUIPO:TDC2012L042VC3MI74A-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:MOTONIVELADORA CATERPILLAR 160K-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoMT-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaMOTONIVELADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0160KCJBP00109-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-MOTONIVELADORA CATERPILLAR 160K-01-12-2023-1-1-2025-MT-02-AC---MOTONIVELADORA-CAT0160KCJBP00109-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:MOTONIVELADORA CATERPILLAR 12M-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoMT-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaMOTONIVELADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0012MCB9200523-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-MOTONIVELADORA CATERPILLAR 12M-01-12-2023-1-1-2025-MT-07-AC---MOTONIVELADORA-CAT0012MCB9200523-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:PISTEN BULLY PISTEN BULLY 600-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:PISTEN BULLY-codigoPB-01-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaPISTEN BULLY-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:WKU5826MAAL010204-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 232
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-PISTEN BULLY PISTEN BULLY 600-01-12-2023-1-1-2025-PB-01-AC---PISTEN BULLY-WKU5826MAAL010204-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:EXCAVADORA CATERPILLAR  323D L-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRE-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaEXCAVADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0323DCLFL00174-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-EXCAVADORA CATERPILLAR  323D L-01-12-2023-1-1-2025-RE-02-AC---EXCAVADORA-CAT0323DCLFL00174-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:EXCAVADORA CATERPILLAR 345C-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRE-04-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaEXCAVADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0345CEPJW02025-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-EXCAVADORA CATERPILLAR 345C-01-12-2023-1-1-2025-RE-04-AC---EXCAVADORA-CAT0345CEPJW02025-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:EXCAVADORA CATERPILLAR 345C-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRE-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaEXCAVADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0345CKTDG00325-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-EXCAVADORA CATERPILLAR 345C-01-12-2023-1-1-2025-RE-05-AC---EXCAVADORA-CAT0345CKTDG00325-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:EXCAVADORA CATERPILLAR 336D L-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRE-06-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaEXCAVADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0336DCM4T00974-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-EXCAVADORA CATERPILLAR 336D L-01-12-2023-1-1-2025-RE-06-AC---EXCAVADORA-CAT0336DCM4T00974-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:EXCAVADORA CATERPILLAR 336D L-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRE-07-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaEXCAVADORA-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0336DTM4T00975-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-EXCAVADORA CATERPILLAR 336D L-01-12-2023-1-1-2025-RE-07-AC---EXCAVADORA-CAT0336DTM4T00975-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:VIBROCOMPACTADOR CATERPILLAR CS76H-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRV-02-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaVIBROCOMPACTADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0CS76HCYK00175-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-VIBROCOMPACTADOR CATERPILLAR CS76H-01-12-2023-1-1-2025-RV-02-AC---VIBROCOMPACTADOR-CAT0CS76HCYK00175-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:VIBROCOMPACTADOR CATERPILLAR CS76T-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoRV-06-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaVIBROCOMPACTADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:CAT0CS76TJC00161-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-VIBROCOMPACTADOR CATERPILLAR CS76T-01-12-2023-1-1-2025-RV-06-AC---VIBROCOMPACTADOR-CAT0CS76TJC00161-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:TOPADOR CATERPILLAR D8T-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoTO-05-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaTOPADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:TXG02293-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-TOPADOR CATERPILLAR D8T-01-12-2023-1-1-2025-TO-05-AC---TOPADOR-TXG02293-
+BULKEQ:Procesando registro: cliente:BEASA-descripcion:TOPADOR CATERPILLAR D8T-fecha_ingreso_aux:01-12-2023-fecha_garantia_aux:1-1-2025-marca:CATERPILLAR-codigoTO-10-sector:Lama-grupo:Domo-criticidad:ALTA-estado:AC-fecha ultima lectura:-ultima_lectura_aux:-descripcion-tecnicaTOPADOR-unidad-industrial:Unidades-area:LamaMtto-proceso:N/A-numero_serie:TXG04280-meta_disponibilidad_aux:
+BULKEQ:CLIENTE 770
+BULKEQ:MARCA 2 228
+BULKEQ:SECTOR :160
+BULKEQ:GRUPO 107
+BULKEQ:CRITICIDAD 43
+BULKEQ:AREA 370
+BULKEQ:PROCESO AUXN/A
+BULKEQ:PROCESO 83
+BULKEQ:UNIDAD INDUSTRIAL16
+BULKEQ:Datos traducidos, insertando: BEASA-TOPADOR CATERPILLAR D8T-01-12-2023-1-1-2025-TO-10-AC---TOPADOR-TXG04280-
+BULKEQ:No hay más registros
+BULKEQ:Registros cargados, marcando batch como procesado
+BULKEQ:Carga bulk terminada exitosamente
