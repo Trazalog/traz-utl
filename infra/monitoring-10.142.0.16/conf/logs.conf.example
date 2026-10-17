@@ -1,0 +1,41 @@
+# /trazaSystems/infra/conf/logs.conf  (sintaxis bash, es "sourceado" por el script)
+# Configuracion de cleanup_logs.sh
+
+# 1) Borrar lo que tenga MAS de estos dias (90 = 3 meses). Minimo permitido: 7.
+RETENTION_DAYS=90
+
+# 2) Patrones. Solo se tocan archivos que coincidan; el resto se ignora.
+#    Se comprimen (gzip) los de meses anteriores al actual:
+COMPRESS_PATTERNS=("*.log" "*.out")
+#    Se borran (por antiguedad) los que coincidan con estos:
+DELETE_PATTERNS=("*.log" "*.log.gz" "*.out" "*.out.gz" "*.hprof" "*.hprof.gz")
+#    Nota: los heap dumps (*.hprof) son diagnosticos de caidas por OutOfMemory;
+#    si quiere conservarlos mas de 90 dias, quitar "*.hprof" y "*.hprof.gz".
+
+# 3) Directorios a mantener (SIN recursion). Formato: "ruta|rotar_activo_MB"
+#    rotar_activo_MB = 0 desactiva la rotacion del log activo en ese directorio.
+#    Con un valor > 0, un *.log ACTIVO que supere ese tamano se copia comprimido
+#    y se vacia (copytruncate). Util para el carbon.log de WSO2 SI, que no rota solo.
+LOG_DIRS=(
+    "/trazaSystems/wso2si-4.1.0/wso2/server/logs|100"
+    "/trazaSystems/wso2am-4.1.0/repository/logs|0"
+    "/trazaSystems/wso2mi-4.1.0/repository/logs|0"
+    "/trazaSystems/wso2mi-dashboard-4.1.0/logs|0"
+)
+
+# Seguridad: el script se niega a trabajar fuera de esta raiz.
+ALLOWED_ROOT="/trazaSystems"
+
+# Si una corrida quiere borrar mas archivos que esto en un directorio, aborta.
+MAX_DELETE_FILES=10000
+
+# Avisos (usa trz_notify.py y su notify.conf). Solo avisa si hubo errores o
+# se liberaron al menos NOTIFY_MIN_MB MB.
+NOTIFY="yes"
+NOTIFY_MIN_MB=50
+SERVER_NAME="WSO2 API Manager PROD (10.142.0.16)"
+NOTIFY_BIN="/trazaSystems/infra/bin/trz_notify.py"
+NOTIFY_CONF="/trazaSystems/infra/conf/notify.conf"
+
+LOG_FILE="/trazaSystems/infra/log/logs_maintenance.log"
+LOCK_FILE="/var/lock/trz_logs_maintenance.lock"

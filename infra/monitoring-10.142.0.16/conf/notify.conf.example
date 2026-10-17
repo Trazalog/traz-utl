@@ -1,0 +1,80 @@
+# /trazaSystems/infra/conf/notify.conf
+# Copiar desde notify.conf.example, completar credenciales y dejar con:
+#     chown root:root  y  chmod 600
+# NUNCA subir al repositorio el archivo con credenciales reales (.gitignore lo evita).
+# Comentarios: en lineas propias o como "valor  # comentario".
+# (Un valor no puede contener " #": si una contrasena lo tiene, cambiarla.)
+
+[general]
+server_name = WSO2 API Manager PROD (10.142.0.16)
+client      = Google Cloud
+state_dir   = /trazaSystems/infra/state
+log_file    = /trazaSystems/infra/log/notify.log
+# Anti-spam: cada cuantas horas se repite un aviso mientras el problema siga igual
+repeat_warning_hours  = 24
+repeat_critical_hours = 4
+# Cuantas corridas seguidas debe fallar un servicio antes de avisar (cron cada 5 min)
+service_consecutive = 1
+
+# ------------------------------------------------------------- CANALES
+[email]
+enabled = yes
+# Mismo servidor SMTP que usan hoy los scripts de 10.142.0.2 (saliente 465 verificado desde 10.142.0.16).
+# Alternativa Gmail: smtp_host = smtp.gmail.com, smtp_port = 587, smtp_security = starttls (contrasena de aplicacion).
+smtp_host     = mauriper.ferozo.com
+smtp_port     = 465
+smtp_security = ssl
+smtp_user     = infra@trazalog.com
+smtp_password = COMPLETAR
+from          = infra@trazalog.com
+# Varios destinatarios separados por coma
+to            = infra@trazalog.com, rruiz@trazalog.com
+
+[telegram]
+enabled   = yes
+bot_token = COMPLETAR
+chat_id   = COMPLETAR
+
+# ------------------------------------------------------------- UMBRALES
+# Disco: el de 10.142.0.16 es de 20 GB y unico (/trazaSystems vive en "/").
+#   80% = ~4 GB libres | 90% = ~2 GB libres. min_free_mb es el criterio del script original.
+[disk]
+paths       = /
+warn_pct    = 80
+crit_pct    = 90
+min_free_mb = 2048
+
+# RAM: se mide la memoria DISPONIBLE (libre + cache recuperable). La VM tiene ~7.6 GB.
+[ram]
+warn_free_mb = 2048
+crit_free_mb = 1024
+consecutive  = 2
+
+# CPU: 1 vCPU, un pico corto es normal; avisa si se repite 3 corridas seguidas.
+[cpu]
+warn_pct       = 80
+crit_pct       = 90
+consecutive    = 3
+sample_seconds = 5
+
+# Servicios:  nombre = texto_a_buscar_en_la_linea_de_comando [| puerto_a_probar]
+[services]
+wso2si = wso2si-4.1.0
+# IMPORTANTE: al 2026-10-16 WSO2 AM y MI NO estaban en ejecucion en este servidor
+# (sus logs no se escriben desde el 2026-07-16, fecha del ultimo reinicio del equipo).
+# Se dejan comentados para no generar una alerta permanente. Confirmar con el equipo
+# si deben estar levantados y, si es asi, descomentar:
+#wso2am = wso2am-4.1.0 | 9443
+#wso2mi = wso2mi-4.1.0
+
+# Logs:  nombre = /ruta | warn_MB | crit_MB
+[logdirs]
+wso2si = /trazaSystems/wso2si-4.1.0/wso2/server/logs | 1000 | 3000
+wso2am = /trazaSystems/wso2am-4.1.0/repository/logs  | 1500 | 3000
+wso2mi = /trazaSystems/wso2mi-4.1.0/repository/logs  | 1500 | 3000
+
+# Latido diario (08, 16 y 22 h): "Internet access is alive" + resumen del equipo
+[internet]
+host      = www.google.com
+port      = 80
+heartbeat = yes

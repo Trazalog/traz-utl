@@ -1,0 +1,7 @@
+/var/www/html/sim/traz-prod-assetplanner/application/logs,/mnt/bucket/prod/logs/sim-traz-prod-assetplanner
+/var/www/html/tools/traz-prod-assetplanner/application/logs,/mnt/bucket/prod/logs/tools-traz-prod-assetplanner
+/var/www/html/sstr/sstr-desa-segdenuncias/application/logs,/mnt/bucket/prod/logs/sstr-desa-segdenuncias
+/var/www/html/traz-comp-dnato/application/logs,/mnt/bucket/prod/logs/traz-comp-dnato
+/var/www/html/traz-tools/application/logs,/mnt/bucket/prod/logs/traz-tools
+/var/www/html/traz-tools/application/modules/traz-comp-calendar/application/logs,/mnt/bucket/prod/logs/traz-tools-traz-comp-calendar
+/var/www/html/traz-prod-assetplanner-v2.0/application/logs,/mnt/bucket/prod/logs/traz-prod-assetplanner-v2.0

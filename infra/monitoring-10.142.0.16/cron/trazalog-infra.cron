@@ -1,0 +1,22 @@
+# /etc/cron.d/trazalog-infra  -  Monitoreo y limpieza de logs en 10.142.0.16
+# Basado en el crontab de root de 10.142.0.2 (mismos scripts, misma idea), con Telegram.
+# Formato /etc/cron.d: minuto hora dia mes dia-semana USUARIO comando
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# No mandar mails locales de cron (los avisos salen por trz_notify.py)
+MAILTO=""
+
+# --- Monitoreo (en 10.142.0.2 corre cada 10 min; aca cada 5 por tener disco chico) ---
+*/5 * * * *  root /trazaSystems/infra/bin/HD_space_status.py
+*/5 * * * *  root /trazaSystems/infra/bin/RAM_status.py
+*/5 * * * *  root /trazaSystems/infra/bin/CPU_usage_status.py
+*/5 * * * *  root /trazaSystems/infra/bin/Services_status.py
+*/30 * * * * root /trazaSystems/infra/bin/Logs_size_status.py
+
+# --- Latido: 08, 16 y 22 h (igual que Internet_status.py en 10.142.0.2) ---
+0 8,16,22 * * * root /trazaSystems/infra/bin/Internet_status.py
+
+# --- Limpieza de logs: todos los dias 02:30, prioridad minima de CPU/disco ---
+# ACTIVAR (quitar el "#") SOLO despues de revisar una simulacion completa:
+#     sudo /trazaSystems/infra/bin/cleanup_logs.sh
+#30 2 * * * root nice -n 19 ionice -c3 /trazaSystems/infra/bin/cleanup_logs.sh --apply
