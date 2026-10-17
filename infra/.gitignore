@@ -1,0 +1,5 @@
+# Nunca subir configuraciones con credenciales reales (solo los *.example)
+**/notify.conf
+**/logs.conf
+**/*.secret
+**/key.json

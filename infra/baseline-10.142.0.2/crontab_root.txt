@@ -1,0 +1,16 @@
+*/10 * * * * python /trazaSystems/HD_space_status.py
+*/10 * * * * python /trazaSystems/RAM_status.py
+*/10 * * * * python /trazaSystems/Services_status.py
+0 8,16,22 * * * python /trazaSystems/Internet_status.py
+0 0 * * * sh /trazaSystems/cleanup_logs.sh
+0 2 * * * sh /root/bucket/mount_bucket.sh
+0 3 * * * python /trazaSystems/mysql_backup_asp2sim.py
+0 3 * * * python /trazaSystems/mysql_backup_asp2tecn.py
+0 3 * * * python /trazaSystems/postgres_backup_bonita_db.py
+0 3 * * * python /trazaSystems/postgres_backup_trazalog_tools.py
+0 3 * * * python /trazaSystems/postgres_backup_bonita_bdm.py
+0 3 * * * python /trazaSystems/postgres_backup_bonita.py
+0 4 * * * /trazaSystems/retencion_15_dias_backups.sh
+15 4 * * * /trazaSystems/retencion_30_dias_bucket.sh
+30 4 * * * /trazaSystems/sync_backups_bucket.sh
+@reboot sh /root/bucket/mount_bucket.sh
